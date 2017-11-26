@@ -1,5 +1,10 @@
 {
   "development": {
-    "PORT": 8081
+    "PORT": 8081,
+    "SESSION_SECRET": "saoisjasihnsoasnasab",
+    "DB_NAME": "intime",
+    "DB_USER": "admin",
+    "DB_PW": "admin",
+    "DB_HOST": "localhost"
   }
 }
