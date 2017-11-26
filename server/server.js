@@ -19,7 +19,7 @@ app.use(session({
   saveUninitialized: false
 }));
 app.use(flash());
-app.use('/', express.static('./public'));
+app.use('/', express.static('./files/public'));
 app.use(passport.initialize());
 app.use(passport.session());
 

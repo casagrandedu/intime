@@ -11,10 +11,11 @@ passport.deserializeUser(function(id, done) {
   Users.findOne({
       where: {
         idUsuario: id
-      }
+      },
+      raw: true
     })
     .then(user => {
-      done(null, user);
+      done(null, _.omit(user, ['senha']));
     }, err => {
       done(err);
     });
