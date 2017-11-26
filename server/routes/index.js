@@ -1,7 +1,8 @@
 const _ = require('lodash');
+const path = require('path');
 const Users = require('./../models/users');
 
-module.exports = (app) => {
+module.exports = (app, passport) => {
   app.route('/api/usuarios')
     .post((req, res) => {
       const data = _.pick(req.body, ['nome', 'senha']);
@@ -40,6 +41,15 @@ module.exports = (app) => {
           })
         });
     })
+
+  app.route('/login')
+    .get((req, res) => {
+      res.sendFile(path.join(__dirname, './../public/index.html'));
+    })
+    .post(passport.authenticate('local-login', {
+      successRedirect: '/index/1',
+      failureRedirect: '/login'
+    }))
 
   return app;
 }
