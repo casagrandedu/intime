@@ -1,6 +1,3 @@
-CREATE DATABASE intime;
-
-
 INSERT INTO `intime`.`tipos_servicos` (`idTipoServico`, `descricao`) VALUES 
 																			('1', 'Confecção de Camisetas'),
 																			('2', 'Facção'),

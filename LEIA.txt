@@ -1,9 +1,13 @@
-Atenção aos passos:
+AtenÃ§Ã£o aos passos:
 
-1 - Executar o scrpit DADOS.SQL no MySQL;
+1 - Abrir o banco de dados MySQL com o servidor
 
-2 - Executar o arquivo standalone.bat na pasta: back-end\wildfly-10.1.0.Final\bin\standalone.bat;
+2 - Criar database com o nome intime;
 
-3 - Executar o arquivo deploy_api.bat na pasta: back-end\api.intime;
+3 - Executar o arquivo standalone.bat na pasta: back-end\wildfly-10.1.0.Final\bin\standalone.bat;
 
-4 - Subir o front-end em um servidor web.
+4 - Executar o arquivo deploy_api.bat na pasta: back-end\api.intime;
+
+5 - Executar o scrpit DADOS.SQL no MySQL;
+
+6 - Subir o front-end em um servidor web.
