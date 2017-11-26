@@ -1,0 +1,48 @@
+<html ng-app="appModule">
+    <head>
+        <title>Intime - Sistema para Gerenciamento de Produção</title>
+        <meta charset="utf-8"></meta>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css"></link>
+        <link rel="stylesheet" type="text/css" href="lib/font-awesome/font-awesome.css"></link>
+        <link rel="stylesheet" type="text/css" href="css/app.css"></link>
+        <link rel="stylesheet" type="text/css" href="css/ui.css"></link>
+    
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-messages.js"></script>
+        <script src="lib/angular/angular-locale_pt-br.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers/appCtrl.js"></script>
+        <script src="js/filters/nameFilter.js"></script>
+        <script src="js/filters/ellipsisFilter.js"></script>
+        <script src="js/services/tiposServicosAPIService.js"></script>
+        <script src="js/services/pedidosAPIService.js"></script>
+        <script src="js/services/clientesAPIService.js"></script>
+        <script src="js/services/processosAPIService.js"></script>
+        <script src="js/value/configApisValue.js"></script>
+        <script src="js/directives/uiAlertDirective.js"></script>
+    
+    </head>
+    <body ng-controller="appCtrl">
+    
+        <div class="container login">
+            <div class="row">
+                <div class="span4 offset4 well">
+                    <legend>Login</legend>
+
+                    <form>
+                        <input type="text" id="username" class="input-block-level" name="username" placeholder="Usuário">
+                        <input type="password" id="password" class="input-block-level" name="password" placeholder="Senha">
+                        <button type="submit" name="submit" class="btn btn-success btn-block">Entrar</button>
+                    </form>    
+                </div>
+            </div>
+        </div>
+    
+        <div ng-include="'view/footer.html'" class="size-app formata-texto"></div>
+    
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/bootstrap/bootstrap.js"></script>
+    </body>
+</html>

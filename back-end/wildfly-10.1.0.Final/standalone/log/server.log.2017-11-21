@@ -1,0 +1,387 @@
+2017-11-21 14:26:15,312 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2017-11-21 14:26:18,688 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-11-21 14:26:19,073 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-11-21 14:26:19,104 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Java\wildfly-10.1.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jdk1.8.0_131\jre\lib\endorsed
+	java.ext.dirs = C:\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Java\jdk1.8.0_131\jre
+	java.io.tmpdir = C:\Users\EDUARD~1\AppData\Local\Temp\
+	java.library.path = C:\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Borland\Delphi7\Bin;C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\Win64;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Java\jdk1.8.0_131\bin;C:\Java\apache-maven-3.5.0\bin;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\3.4\bin;C:\Users\Eduardo Casagrande\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Eduardo Casagrande\AppData\Roaming\npm;;C:\Program Files\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Java\wildfly-10.1.0.Final
+	jboss.host.name = eduardo
+	jboss.modules.dir = C:\Java\wildfly-10.1.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = eduardo
+	jboss.qualified.host.name = eduardo
+	jboss.server.base.dir = C:\Java\wildfly-10.1.0.Final\standalone
+	jboss.server.config.dir = C:\Java\wildfly-10.1.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Java\wildfly-10.1.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Java\wildfly-10.1.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Java\wildfly-10.1.0.Final\standalone\log
+	jboss.server.name = eduardo
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Java\wildfly-10.1.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Java/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = C:/Java/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = C:/Java/wildfly-10.1.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Java\jdk1.8.0_131\jre\classes
+	sun.boot.library.path = C:\Java\jdk1.8.0_131\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Java/wildfly-10.1.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Java\wildfly-10.1.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = C:\Java\wildfly-10.1.0.Final\bin
+	user.home = C:\Users\Eduardo Casagrande
+	user.language = pt
+	user.name = Eduardo Casagrande
+	user.script = 
+	user.timezone = America/Sao_Paulo
+	user.variant = 
+2017-11-21 14:26:19,104 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Java/wildfly-10.1.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Java/wildfly-10.1.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Java/wildfly-10.1.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2017-11-21 14:26:30,835 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-11-21 14:26:31,013 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.4.0.Final
+2017-11-21 14:26:31,051 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.4.0.Final
+2017-11-21 14:26:31,266 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-11-21 14:26:31,284 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2017-11-21 14:26:31,284 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-11-21 14:26:31,300 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2017-11-21 14:26:31,300 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2017-11-21 14:26:31,335 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2017-11-21 14:26:31,351 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-11-21 14:26:31,366 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-11-21 14:26:31,406 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-11-21 14:26:32,776 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-11-21 14:26:33,966 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\Java\wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-11-21 14:26:34,020 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2017-11-21 14:26:34,020 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = mysql
+2017-11-21 14:26:34,056 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-11-21 14:26:34,056 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-11-21 14:26:34,710 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2017-11-21 14:26:34,712 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-11-21 14:26:34,789 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2017-11-21 14:26:34,789 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2017-11-21 14:26:35,746 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 4.0.21.Final
+2017-11-21 14:26:35,752 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2017-11-21 14:26:35,791 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2017-11-21 14:26:35,947 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore C:\Java\wildfly-10.1.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-11-21 14:26:36,433 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Java\wildfly-10.1.0.Final\standalone\deployments
+2017-11-21 14:26:36,489 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "api-intime.war" (runtime-name: "api-intime.war")
+2017-11-21 14:26:36,565 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2017-11-21 14:26:37,555 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-11-21 14:26:37,555 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/intimeDS]
+2017-11-21 14:26:37,570 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/bibliotecaDS]
+2017-11-21 14:26:39,424 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2017-11-21 14:26:40,165 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-21 14:26:40,165 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-21 14:26:40,165 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-21 14:26:40,165 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-21 14:26:40,165 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-21 14:26:40,165 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-21 14:26:44,072 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2017-11-21 14:26:48,085 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-11-21 14:26:48,764 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for intimeDS
+2017-11-21 14:26:49,434 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-21 14:26:49,503 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 63) HHH000204: Processing PersistenceUnitInfo [
+	name: intimeDS
+	...]
+2017-11-21 14:26:49,792 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment api-intime.war
+2017-11-21 14:26:50,749 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 63) HHH000412: Hibernate Core {5.0.10.Final}
+2017-11-21 14:26:50,758 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 63) HHH000206: hibernate.properties not found
+2017-11-21 14:26:50,758 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 63) HHH000021: Bytecode provider name : javassist
+2017-11-21 14:26:50,992 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 63) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-21 14:26:51,576 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 5.2.4.Final
+2017-11-21 14:26:51,885 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'EstadosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:app/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:module/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:global/api-intime/EstadosDAO
+	java:app/api-intime/EstadosDAO
+	java:module/EstadosDAO
+
+2017-11-21 14:26:51,886 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'ProcessosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:app/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:module/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:global/api-intime/ProcessosDAO
+	java:app/api-intime/ProcessosDAO
+	java:module/ProcessosDAO
+
+2017-11-21 14:26:51,887 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'CidadesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:app/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:module/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:global/api-intime/CidadesDAO
+	java:app/api-intime/CidadesDAO
+	java:module/CidadesDAO
+
+2017-11-21 14:26:51,887 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'PedidosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:app/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:module/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:global/api-intime/PedidosDAO
+	java:app/api-intime/PedidosDAO
+	java:module/PedidosDAO
+
+2017-11-21 14:26:51,888 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'TiposServicosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:module/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:global/api-intime/TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO
+	java:module/TiposServicosDAO
+
+2017-11-21 14:26:51,888 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'PaisesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:app/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:module/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:global/api-intime/PaisesDAO
+	java:app/api-intime/PaisesDAO
+	java:module/PaisesDAO
+
+2017-11-21 14:26:51,889 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'ClientesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:app/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:module/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:global/api-intime/ClientesDAO
+	java:app/api-intime/ClientesDAO
+	java:module/ClientesDAO
+
+2017-11-21 14:26:52,522 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-21 14:26:52,522 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-21 14:26:53,295 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 2.3.5 (Final)
+2017-11-21 14:26:55,088 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 63) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-11-21 14:26:55,404 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-21 14:26:55,704 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 63) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017-11-21 14:26:55,820 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 63) Envers integration enabled? : true
+2017-11-21 14:26:57,075 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 63) HHH000228: Running hbm2ddl schema update
+2017-11-21 14:27:00,511 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 59) RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.emporio.intime.ConfigApplication
+2017-11-21 14:27:00,686 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0021: Registered web context: /api-intime
+2017-11-21 14:27:00,838 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "api-intime.war" (runtime-name : "api-intime.war")
+2017-11-21 14:27:01,367 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-11-21 14:27:01,368 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-11-21 14:27:01,369 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 49453ms - Started 588 of 824 services (406 services are lazy, passive or on-demand)
+2017-11-21 14:27:36,624 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location C:\Java\wildfly-10.1.0.Final\standalone\data\content\95\07ece4bcb2de0fe1addd5a6292961cefa56166\content
+2017-11-21 14:27:36,662 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 72) WFLYUT0022: Unregistered web context: /api-intime
+2017-11-21 14:27:36,725 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 75) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-21 14:27:36,763 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 75) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-21 14:27:36,810 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 75) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-11-21 14:27:36,863 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment api-intime.war (runtime-name: api-intime.war) in 218ms
+2017-11-21 14:27:36,863 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "api-intime.war" (runtime-name: "api-intime.war")
+2017-11-21 14:27:37,063 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for intimeDS
+2017-11-21 14:27:37,110 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 75) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-21 14:27:37,110 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 75) HHH000204: Processing PersistenceUnitInfo [
+	name: intimeDS
+	...]
+2017-11-21 14:27:37,163 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment api-intime.war
+2017-11-21 14:27:37,194 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'EstadosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:app/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:module/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:global/api-intime/EstadosDAO
+	java:app/api-intime/EstadosDAO
+	java:module/EstadosDAO
+
+2017-11-21 14:27:37,194 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'ProcessosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:app/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:module/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:global/api-intime/ProcessosDAO
+	java:app/api-intime/ProcessosDAO
+	java:module/ProcessosDAO
+
+2017-11-21 14:27:37,194 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'CidadesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:app/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:module/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:global/api-intime/CidadesDAO
+	java:app/api-intime/CidadesDAO
+	java:module/CidadesDAO
+
+2017-11-21 14:27:37,194 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'PedidosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:app/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:module/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:global/api-intime/PedidosDAO
+	java:app/api-intime/PedidosDAO
+	java:module/PedidosDAO
+
+2017-11-21 14:27:37,210 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TiposServicosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:module/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:global/api-intime/TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO
+	java:module/TiposServicosDAO
+
+2017-11-21 14:27:37,268 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'PaisesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:app/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:module/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:global/api-intime/PaisesDAO
+	java:app/api-intime/PaisesDAO
+	java:module/PaisesDAO
+
+2017-11-21 14:27:37,268 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'ClientesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:app/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:module/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:global/api-intime/ClientesDAO
+	java:app/api-intime/ClientesDAO
+	java:module/ClientesDAO
+
+2017-11-21 14:27:37,603 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 82) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-21 14:27:37,631 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 82) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-21 14:27:37,652 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 82) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-11-21 14:27:37,695 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-21 14:27:37,701 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 82) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017-11-21 14:27:37,760 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 82) Envers integration enabled? : true
+2017-11-21 14:27:38,101 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 82) HHH000228: Running hbm2ddl schema update
+2017-11-21 14:27:39,008 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 79) RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.emporio.intime.ConfigApplication
+2017-11-21 14:27:39,057 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0021: Registered web context: /api-intime
+2017-11-21 14:27:39,204 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0016: Replaced deployment "api-intime.war" with deployment "api-intime.war"
+2017-11-21 14:27:39,222 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location C:\Java\wildfly-10.1.0.Final\standalone\data\content\d6\79cc2464f0fd38cfc5e37dc1882575c78122a2\content
+2017-11-21 14:28:48,439 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-4) HHH000397: Using ASTQueryTranslatorFactory
+2017-11-21 14:28:48,896 INFO  [stdout] (default task-4) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-21 14:28:48,897 INFO  [stdout] (default task-3) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_
+2017-11-21 14:28:48,900 INFO  [stdout] (default task-2) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-21 14:28:53,398 INFO  [stdout] (default task-6) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-21 14:28:53,408 INFO  [stdout] (default task-7) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_
+2017-11-21 14:28:53,426 INFO  [stdout] (default task-5) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-21 14:32:15,189 INFO  [stdout] (default task-8) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-21 14:32:15,190 INFO  [stdout] (default task-10) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_
+2017-11-21 14:32:15,191 INFO  [stdout] (default task-9) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-21 14:34:21,022 INFO  [stdout] (default task-11) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-21 14:34:21,022 INFO  [stdout] (default task-12) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-21 14:34:21,043 INFO  [stdout] (default task-13) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_
+2017-11-21 14:36:11,848 INFO  [stdout] (default task-14) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-21 14:36:11,848 INFO  [stdout] (default task-15) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-21 14:36:11,871 INFO  [stdout] (default task-16) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_
+2017-11-21 14:38:06,706 INFO  [stdout] (default task-17) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_
+2017-11-21 14:38:06,761 INFO  [stdout] (default task-17) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:38:06,871 INFO  [stdout] (default task-17) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-21 14:38:06,874 INFO  [stdout] (default task-17) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:38:06,879 INFO  [stdout] (default task-17) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_
+2017-11-21 14:38:06,883 INFO  [stdout] (default task-17) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:38:06,886 INFO  [stdout] (default task-17) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-21 14:38:06,888 INFO  [stdout] (default task-17) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:38:49,809 INFO  [stdout] (default task-19) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-21 14:38:49,824 INFO  [stdout] (default task-20) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-21 14:38:49,829 INFO  [stdout] (default task-21) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_
+2017-11-21 14:40:34,462 INFO  [stdout] (default task-22) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-21 14:40:34,468 INFO  [stdout] (default task-24) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_
+2017-11-21 14:40:34,480 INFO  [stdout] (default task-23) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-21 14:43:45,634 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-25) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasfisicas". Selecting one. Matching methods: [public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer), public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasFisicas()]
+2017-11-21 14:43:45,825 INFO  [stdout] (default task-25) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Fisica'
+2017-11-21 14:43:45,832 INFO  [stdout] (default task-25) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:43:45,834 INFO  [stdout] (default task-25) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-21 14:43:45,842 INFO  [stdout] (default task-25) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:43:48,121 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-26) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasjuridicas". Selecting one. Matching methods: [public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasJuridicas(), public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer)]
+2017-11-21 14:43:48,130 INFO  [stdout] (default task-26) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Juridica'
+2017-11-21 14:43:48,131 INFO  [stdout] (default task-26) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:43:48,131 INFO  [stdout] (default task-26) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-21 14:43:50,063 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-27) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasfisicas". Selecting one. Matching methods: [public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer), public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasFisicas()]
+2017-11-21 14:43:50,066 INFO  [stdout] (default task-27) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Fisica'
+2017-11-21 14:43:50,072 INFO  [stdout] (default task-27) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:43:50,074 INFO  [stdout] (default task-27) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-21 14:43:50,076 INFO  [stdout] (default task-27) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:43:52,071 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-28) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasjuridicas". Selecting one. Matching methods: [public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasJuridicas(), public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer)]
+2017-11-21 14:43:52,074 INFO  [stdout] (default task-28) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Juridica'
+2017-11-21 14:43:52,078 INFO  [stdout] (default task-28) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:43:52,080 INFO  [stdout] (default task-28) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-21 14:43:53,810 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-29) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasfisicas". Selecting one. Matching methods: [public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer), public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasFisicas()]
+2017-11-21 14:43:53,813 INFO  [stdout] (default task-29) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Fisica'
+2017-11-21 14:43:53,817 INFO  [stdout] (default task-29) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:43:53,819 INFO  [stdout] (default task-29) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-21 14:43:53,821 INFO  [stdout] (default task-29) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:44:32,453 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-30) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasfisicas". Selecting one. Matching methods: [public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer), public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasFisicas()]
+2017-11-21 14:44:32,456 INFO  [stdout] (default task-30) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Fisica'
+2017-11-21 14:44:32,460 INFO  [stdout] (default task-30) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:44:32,461 INFO  [stdout] (default task-30) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-21 14:44:32,461 INFO  [stdout] (default task-30) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:45:22,830 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-31) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasfisicas". Selecting one. Matching methods: [public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer), public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasFisicas()]
+2017-11-21 14:45:22,833 INFO  [stdout] (default task-31) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Fisica'
+2017-11-21 14:45:22,837 INFO  [stdout] (default task-31) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:45:22,840 INFO  [stdout] (default task-31) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-21 14:45:22,842 INFO  [stdout] (default task-31) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:45:24,707 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-32) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasjuridicas". Selecting one. Matching methods: [public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasJuridicas(), public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer)]
+2017-11-21 14:45:24,714 INFO  [stdout] (default task-32) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Juridica'
+2017-11-21 14:45:24,719 INFO  [stdout] (default task-32) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-21 14:45:24,721 INFO  [stdout] (default task-32) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-21 14:45:26,443 INFO  [stdout] (default task-34) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-21 14:45:26,453 INFO  [stdout] (default task-33) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-21 14:45:26,462 INFO  [stdout] (default task-35) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_
+2017-11-21 14:45:30,124 INFO  [stdout] (default task-36) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-21 14:45:30,152 INFO  [stdout] (default task-37) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-21 14:45:30,165 INFO  [stdout] (default task-38) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_

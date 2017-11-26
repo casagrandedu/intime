@@ -1,0 +1,91 @@
+.page-header {
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 9px;
+    font-weight: bold;
+}
+.size-app {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.size-app-clientes-fisicos {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.size-app-clientes-juridicos {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-left{
+    width: 260px;
+    float: left;
+}
+
+.input-right{
+    width: 260px;
+    float: right;
+}
+
+.cadastro{
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.selecionado {
+    background-color: #E79A9A;
+}
+.negrito {
+    font-weight: bold;
+}
+.formata-texto {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.borda{
+    margin-bottom: 10px;
+}
+.sem-margem{
+    margin-bottom: -20px;
+}
+
+.add{
+    width: 30px;
+    position: relative;
+    top: 35px;
+    left: 290px;
+}
+
+.login{
+    margin-top: 100px;
+}
+
+.titulo{
+    color: rgb(90, 90, 170);
+    border-bottom: 2px solid rgb(90, 90, 170);
+}
+
+.titulo-cadastro{
+    color: rgba(14, 14, 51, 0.5);
+    border-bottom: 2px solid rgba(14, 14, 51, 0.5);
+    margin-top: 10px;
+}
+
+.input-large{
+    width: 420px;
+}
+
+.input-min{
+    width: 100px;
+}
+
+.input-min-qtd{
+    width: 102px;
+    margin-left: 0.9px;
+}

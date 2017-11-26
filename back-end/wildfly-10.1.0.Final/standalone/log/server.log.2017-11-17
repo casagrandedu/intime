@@ -1,0 +1,1249 @@
+2017-11-17 09:09:35,018 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2017-11-17 09:09:38,282 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-11-17 09:09:38,744 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-11-17 09:09:38,764 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Java\wildfly-10.1.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jdk1.8.0_131\jre\lib\endorsed
+	java.ext.dirs = C:\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Java\jdk1.8.0_131\jre
+	java.io.tmpdir = C:\Users\EDUARD~1\AppData\Local\Temp\
+	java.library.path = C:\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Borland\Delphi7\Bin;C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\Win64;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Java\jdk1.8.0_131\bin;C:\Java\apache-maven-3.5.0\bin;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\3.4\bin;C:\Users\Eduardo Casagrande\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Eduardo Casagrande\AppData\Roaming\npm;;C:\Program Files\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Java\wildfly-10.1.0.Final
+	jboss.host.name = eduardo
+	jboss.modules.dir = C:\Java\wildfly-10.1.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = eduardo
+	jboss.qualified.host.name = eduardo
+	jboss.server.base.dir = C:\Java\wildfly-10.1.0.Final\standalone
+	jboss.server.config.dir = C:\Java\wildfly-10.1.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Java\wildfly-10.1.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Java\wildfly-10.1.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Java\wildfly-10.1.0.Final\standalone\log
+	jboss.server.name = eduardo
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Java\wildfly-10.1.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Java/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = C:/Java/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = C:/Java/wildfly-10.1.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Java\jdk1.8.0_131\jre\classes
+	sun.boot.library.path = C:\Java\jdk1.8.0_131\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Java/wildfly-10.1.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Java\wildfly-10.1.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = C:\Java\wildfly-10.1.0.Final\bin
+	user.home = C:\Users\Eduardo Casagrande
+	user.language = pt
+	user.name = Eduardo Casagrande
+	user.script = 
+	user.timezone = America/Sao_Paulo
+	user.variant = 
+2017-11-17 09:09:38,764 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Java/wildfly-10.1.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Java/wildfly-10.1.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Java/wildfly-10.1.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2017-11-17 09:09:51,217 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-11-17 09:09:51,384 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.4.0.Final
+2017-11-17 09:09:51,384 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.4.0.Final
+2017-11-17 09:09:51,601 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-11-17 09:09:51,617 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2017-11-17 09:09:51,617 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2017-11-17 09:09:51,633 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-11-17 09:09:51,649 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2017-11-17 09:09:51,670 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2017-11-17 09:09:51,733 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-11-17 09:09:51,790 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-11-17 09:09:51,802 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-11-17 09:09:52,944 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-11-17 09:09:54,281 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\Java\wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-11-17 09:09:54,806 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2017-11-17 09:09:54,822 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = mysql
+2017-11-17 09:09:54,837 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-11-17 09:09:54,837 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-11-17 09:09:55,883 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2017-11-17 09:09:55,883 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-11-17 09:09:56,254 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2017-11-17 09:09:56,254 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2017-11-17 09:09:56,615 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2017-11-17 09:09:56,615 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2017-11-17 09:09:56,699 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.21.Final
+2017-11-17 09:09:57,517 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2017-11-17 09:09:57,955 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Java\wildfly-10.1.0.Final\standalone\deployments
+2017-11-17 09:09:57,955 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore C:\Java\wildfly-10.1.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-11-17 09:09:57,955 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/bibliotecaDS]
+2017-11-17 09:09:57,955 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-11-17 09:09:57,970 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/intimeDS]
+2017-11-17 09:09:58,040 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "api-intime.war" (runtime-name: "api-intime.war")
+2017-11-17 09:10:00,753 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2017-11-17 09:10:01,437 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:10:01,437 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:10:01,437 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:10:01,452 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:10:02,022 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 66) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:10:02,026 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 66) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:10:04,573 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2017-11-17 09:10:05,464 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-11-17 09:10:06,467 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for intimeDS
+2017-11-17 09:10:08,158 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 67) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 09:10:08,609 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 67) HHH000204: Processing PersistenceUnitInfo [
+	name: intimeDS
+	...]
+2017-11-17 09:10:08,932 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment api-intime.war
+2017-11-17 09:10:10,498 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 67) HHH000412: Hibernate Core {5.0.10.Final}
+2017-11-17 09:10:10,504 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 67) HHH000206: hibernate.properties not found
+2017-11-17 09:10:10,504 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 67) HHH000021: Bytecode provider name : javassist
+2017-11-17 09:10:10,997 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 67) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-17 09:10:11,066 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 5.2.4.Final
+2017-11-17 09:10:11,298 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'EstadosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:app/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:module/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:global/api-intime/EstadosDAO
+	java:app/api-intime/EstadosDAO
+	java:module/EstadosDAO
+
+2017-11-17 09:10:11,298 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'ProcessosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:app/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:module/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:global/api-intime/ProcessosDAO
+	java:app/api-intime/ProcessosDAO
+	java:module/ProcessosDAO
+
+2017-11-17 09:10:11,298 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'CidadesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:app/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:module/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:global/api-intime/CidadesDAO
+	java:app/api-intime/CidadesDAO
+	java:module/CidadesDAO
+
+2017-11-17 09:10:11,298 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'PedidosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:app/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:module/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:global/api-intime/PedidosDAO
+	java:app/api-intime/PedidosDAO
+	java:module/PedidosDAO
+
+2017-11-17 09:10:11,313 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'TiposServicosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:module/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:global/api-intime/TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO
+	java:module/TiposServicosDAO
+
+2017-11-17 09:10:11,313 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'PaisesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:app/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:module/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:global/api-intime/PaisesDAO
+	java:app/api-intime/PaisesDAO
+	java:module/PaisesDAO
+
+2017-11-17 09:10:11,313 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'ClientesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:app/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:module/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:global/api-intime/ClientesDAO
+	java:app/api-intime/ClientesDAO
+	java:module/ClientesDAO
+
+2017-11-17 09:10:12,172 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 67) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:10:12,173 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 67) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:10:12,623 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 2.3.5 (Final)
+2017-11-17 09:10:13,790 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 67) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-11-17 09:10:14,569 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 67) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 09:10:14,769 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 67) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017-11-17 09:10:14,823 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 67) Envers integration enabled? : true
+2017-11-17 09:10:16,279 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 67) HHH000228: Running hbm2ddl schema update
+2017-11-17 09:10:21,113 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 59) RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.emporio.intime.ConfigApplication
+2017-11-17 09:10:21,285 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0021: Registered web context: /api-intime
+2017-11-17 09:10:21,385 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "api-intime.war" (runtime-name : "api-intime.war")
+2017-11-17 09:10:21,936 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-11-17 09:10:21,936 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-11-17 09:10:21,936 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 49810ms - Started 588 of 824 services (406 services are lazy, passive or on-demand)
+2017-11-17 09:12:07,403 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2017-11-17 09:12:07,989 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-11-17 09:12:08,120 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-11-17 09:12:08,120 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Java\wildfly-10.1.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jdk1.8.0_131\jre\lib\endorsed
+	java.ext.dirs = C:\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Java\jdk1.8.0_131\jre
+	java.io.tmpdir = C:\Users\EDUARD~1\AppData\Local\Temp\
+	java.library.path = C:\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Borland\Delphi7\Bin;C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\Win64;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Java\jdk1.8.0_131\bin;C:\Java\apache-maven-3.5.0\bin;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\3.4\bin;C:\Users\Eduardo Casagrande\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Eduardo Casagrande\AppData\Roaming\npm;;C:\Program Files\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Java\wildfly-10.1.0.Final
+	jboss.host.name = eduardo
+	jboss.modules.dir = C:\Java\wildfly-10.1.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = eduardo
+	jboss.qualified.host.name = eduardo
+	jboss.server.base.dir = C:\Java\wildfly-10.1.0.Final\standalone
+	jboss.server.config.dir = C:\Java\wildfly-10.1.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Java\wildfly-10.1.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Java\wildfly-10.1.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Java\wildfly-10.1.0.Final\standalone\log
+	jboss.server.name = eduardo
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Java\wildfly-10.1.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Java/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = C:/Java/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = C:/Java/wildfly-10.1.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 10.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Java\jdk1.8.0_131\jre\classes
+	sun.boot.library.path = C:\Java\jdk1.8.0_131\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Java/wildfly-10.1.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Java\wildfly-10.1.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = C:\Java\wildfly-10.1.0.Final\bin
+	user.home = C:\Users\Eduardo Casagrande
+	user.language = pt
+	user.name = Eduardo Casagrande
+	user.script = 
+	user.timezone = America/Sao_Paulo
+	user.variant = 
+2017-11-17 09:12:08,120 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.x -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Java/wildfly-10.1.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Java/wildfly-10.1.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Java/wildfly-10.1.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2017-11-17 09:12:11,141 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-11-17 09:12:11,160 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.4.0.Final
+2017-11-17 09:12:11,175 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.4.0.Final
+2017-11-17 09:12:11,260 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2017-11-17 09:12:11,276 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-11-17 09:12:11,291 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2017-11-17 09:12:11,291 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2017-11-17 09:12:11,322 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-11-17 09:12:11,376 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-11-17 09:12:11,391 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2017-11-17 09:12:11,423 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-11-17 09:12:11,460 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-11-17 09:12:11,761 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-11-17 09:12:11,777 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2017-11-17 09:12:11,793 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-11-17 09:12:12,093 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2017-11-17 09:12:12,110 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-11-17 09:12:12,156 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\Java\wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-11-17 09:12:12,199 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = mysql
+2017-11-17 09:12:12,200 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-11-17 09:12:12,422 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2017-11-17 09:12:12,425 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2017-11-17 09:12:13,167 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2017-11-17 09:12:13,176 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 4.0.21.Final
+2017-11-17 09:12:13,196 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2017-11-17 09:12:13,418 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2017-11-17 09:12:13,602 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-6) WFLYDM0111: Keystore C:\Java\wildfly-10.1.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-11-17 09:12:13,673 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Java\wildfly-10.1.0.Final\standalone\deployments
+2017-11-17 09:12:13,696 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "api-intime.war" (runtime-name: "api-intime.war")
+2017-11-17 09:12:14,285 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2017-11-17 09:12:14,419 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-11-17 09:12:14,427 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/bibliotecaDS]
+2017-11-17 09:12:14,434 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/intimeDS]
+2017-11-17 09:12:14,542 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:12:14,713 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 66) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:12:14,729 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 66) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:12:14,746 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:12:14,754 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 59) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:12:14,756 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 59) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:12:16,008 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2017-11-17 09:12:16,240 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-11-17 09:12:16,818 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for intimeDS
+2017-11-17 09:12:16,987 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 58) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 09:12:17,038 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 58) HHH000204: Processing PersistenceUnitInfo [
+	name: intimeDS
+	...]
+2017-11-17 09:12:17,208 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment api-intime.war
+2017-11-17 09:12:17,251 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 58) HHH000412: Hibernate Core {5.0.10.Final}
+2017-11-17 09:12:17,258 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 58) HHH000206: hibernate.properties not found
+2017-11-17 09:12:17,285 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 58) HHH000021: Bytecode provider name : javassist
+2017-11-17 09:12:17,425 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 58) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-17 09:12:17,750 INFO  [org.jboss.as.protocol] (management I/O-1) WFLYPRT0057:  cancelled task by interrupting thread Thread[management-handler-thread - 3,5,management-handler-thread]
+2017-11-17 09:12:17,827 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.2.4.Final
+2017-11-17 09:12:17,928 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'EstadosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:app/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:module/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:global/api-intime/EstadosDAO
+	java:app/api-intime/EstadosDAO
+	java:module/EstadosDAO
+
+2017-11-17 09:12:17,928 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'ProcessosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:app/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:module/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:global/api-intime/ProcessosDAO
+	java:app/api-intime/ProcessosDAO
+	java:module/ProcessosDAO
+
+2017-11-17 09:12:17,928 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'CidadesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:app/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:module/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:global/api-intime/CidadesDAO
+	java:app/api-intime/CidadesDAO
+	java:module/CidadesDAO
+
+2017-11-17 09:12:17,928 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'PedidosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:app/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:module/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:global/api-intime/PedidosDAO
+	java:app/api-intime/PedidosDAO
+	java:module/PedidosDAO
+
+2017-11-17 09:12:17,928 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'TiposServicosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:module/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:global/api-intime/TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO
+	java:module/TiposServicosDAO
+
+2017-11-17 09:12:17,928 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'PaisesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:app/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:module/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:global/api-intime/PaisesDAO
+	java:app/api-intime/PaisesDAO
+	java:module/PaisesDAO
+
+2017-11-17 09:12:17,928 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'ClientesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:app/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:module/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:global/api-intime/ClientesDAO
+	java:app/api-intime/ClientesDAO
+	java:module/ClientesDAO
+
+2017-11-17 09:12:18,298 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:12:18,303 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:12:18,414 INFO  [org.jboss.weld.Version] (MSC service thread 1-7) WELD-000900: 2.3.5 (Final)
+2017-11-17 09:12:18,926 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 59) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 09:12:19,020 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 58) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-11-17 09:12:19,036 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 59) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017-11-17 09:12:19,174 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 59) Envers integration enabled? : true
+2017-11-17 09:12:20,107 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 59) HHH000228: Running hbm2ddl schema update
+2017-11-17 09:12:22,565 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 59) RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.emporio.intime.ConfigApplication
+2017-11-17 09:12:22,727 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0021: Registered web context: /api-intime
+2017-11-17 09:12:22,765 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "api-intime.war" (runtime-name : "api-intime.war")
+2017-11-17 09:12:23,028 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-11-17 09:12:23,028 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-11-17 09:12:23,028 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 16412ms - Started 588 of 824 services (406 services are lazy, passive or on-demand)
+2017-11-17 09:12:55,558 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location C:\Java\wildfly-10.1.0.Final\standalone\data\content\85\fdbffea315e60929f2d796fe64e930589d6b2c\content
+2017-11-17 09:12:55,616 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0022: Unregistered web context: /api-intime
+2017-11-17 09:12:55,943 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 09:12:56,004 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 09:12:56,145 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-11-17 09:12:56,179 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment api-intime.war (runtime-name: api-intime.war) in 609ms
+2017-11-17 09:12:56,183 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "api-intime.war" (runtime-name: "api-intime.war")
+2017-11-17 09:12:56,492 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for intimeDS
+2017-11-17 09:12:56,564 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 09:12:56,565 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 77) HHH000204: Processing PersistenceUnitInfo [
+	name: intimeDS
+	...]
+2017-11-17 09:12:56,673 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment api-intime.war
+2017-11-17 09:12:56,694 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'EstadosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:app/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:module/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:global/api-intime/EstadosDAO
+	java:app/api-intime/EstadosDAO
+	java:module/EstadosDAO
+
+2017-11-17 09:12:56,695 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'ProcessosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:app/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:module/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:global/api-intime/ProcessosDAO
+	java:app/api-intime/ProcessosDAO
+	java:module/ProcessosDAO
+
+2017-11-17 09:12:56,695 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'CidadesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:app/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:module/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:global/api-intime/CidadesDAO
+	java:app/api-intime/CidadesDAO
+	java:module/CidadesDAO
+
+2017-11-17 09:12:56,696 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'PedidosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:app/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:module/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:global/api-intime/PedidosDAO
+	java:app/api-intime/PedidosDAO
+	java:module/PedidosDAO
+
+2017-11-17 09:12:56,696 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'TiposServicosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:module/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:global/api-intime/TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO
+	java:module/TiposServicosDAO
+
+2017-11-17 09:12:56,696 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'PaisesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:app/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:module/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:global/api-intime/PaisesDAO
+	java:app/api-intime/PaisesDAO
+	java:module/PaisesDAO
+
+2017-11-17 09:12:56,697 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'ClientesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:app/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:module/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:global/api-intime/ClientesDAO
+	java:app/api-intime/ClientesDAO
+	java:module/ClientesDAO
+
+2017-11-17 09:12:56,892 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 77) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:12:56,892 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 77) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 09:12:56,908 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-11-17 09:12:56,939 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 77) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 09:12:56,939 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 77) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017-11-17 09:12:56,955 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 77) Envers integration enabled? : true
+2017-11-17 09:12:57,171 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 77) HHH000228: Running hbm2ddl schema update
+2017-11-17 09:12:58,003 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 77) RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.emporio.intime.ConfigApplication
+2017-11-17 09:12:58,057 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0021: Registered web context: /api-intime
+2017-11-17 09:12:58,225 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0016: Replaced deployment "api-intime.war" with deployment "api-intime.war"
+2017-11-17 09:12:58,225 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0002: Content removed from location C:\Java\wildfly-10.1.0.Final\standalone\data\content\21\b2ed31e79f29d7b2274091966422ebf7b1c52e\content
+2017-11-17 12:19:27,097 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2017-11-17 12:19:27,560 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-11-17 12:19:27,698 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-11-17 12:19:27,698 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Java\wildfly-10.1.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jdk1.8.0_131\jre\lib\endorsed
+	java.ext.dirs = C:\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Java\jdk1.8.0_131\jre
+	java.io.tmpdir = C:\Users\EDUARD~1\AppData\Local\Temp\
+	java.library.path = C:\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Borland\Delphi7\Bin;C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\Win64;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Java\jdk1.8.0_131\bin;C:\Java\apache-maven-3.5.0\bin;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\3.4\bin;C:\Users\Eduardo Casagrande\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Eduardo Casagrande\AppData\Roaming\npm;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = C:\Java\wildfly-10.1.0.Final
+	jboss.host.name = eduardo
+	jboss.modules.dir = C:\Java\wildfly-10.1.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = eduardo
+	jboss.qualified.host.name = eduardo
+	jboss.server.base.dir = C:\Java\wildfly-10.1.0.Final\standalone
+	jboss.server.config.dir = C:\Java\wildfly-10.1.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Java\wildfly-10.1.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Java\wildfly-10.1.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Java\wildfly-10.1.0.Final\standalone\log
+	jboss.server.name = eduardo
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Java\wildfly-10.1.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\Java\wildfly-10.1.0.Final\standalone\configuration/logging.properties
+	module.path = C:\Java\wildfly-10.1.0.Final\modules
+	org.jboss.boot.log.file = C:\Java\wildfly-10.1.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Java\jdk1.8.0_131\jre\classes
+	sun.boot.library.path = C:\Java\jdk1.8.0_131\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\Java\wildfly-10.1.0.Final\jboss-modules.jar -mp C:\Java\wildfly-10.1.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\Java\wildfly-10.1.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.stderr.encoding = cp850
+	sun.stdout.encoding = cp850
+	user.country = BR
+	user.dir = C:\Java\wildfly-10.1.0.Final\bin
+	user.home = C:\Users\Eduardo Casagrande
+	user.language = pt
+	user.name = Eduardo Casagrande
+	user.script = 
+	user.timezone = America/Sao_Paulo
+	user.variant = 
+2017-11-17 12:19:27,698 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=C:\Java\wildfly-10.1.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\Java\wildfly-10.1.0.Final\standalone\configuration/logging.properties 
+2017-11-17 12:19:36,409 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-11-17 12:19:36,590 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.4.0.Final
+2017-11-17 12:19:36,593 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.4.0.Final
+2017-11-17 12:19:36,856 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2017-11-17 12:19:36,887 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-11-17 12:19:36,871 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-11-17 12:19:36,893 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2017-11-17 12:19:36,893 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-11-17 12:19:37,094 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-11-17 12:19:37,109 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2017-11-17 12:19:37,109 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2017-11-17 12:19:37,225 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-11-17 12:19:37,820 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-11-17 12:19:39,106 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\Java\wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-11-17 12:19:40,098 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2017-11-17 12:19:40,103 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = mysql
+2017-11-17 12:19:40,131 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-11-17 12:19:40,133 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-11-17 12:19:40,962 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2017-11-17 12:19:40,962 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-11-17 12:19:41,784 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.21.Final
+2017-11-17 12:19:41,799 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2017-11-17 12:19:41,815 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2017-11-17 12:19:41,868 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2017-11-17 12:19:41,868 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2017-11-17 12:19:42,686 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2017-11-17 12:19:42,786 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-11-17 12:19:42,802 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/intimeDS]
+2017-11-17 12:19:42,802 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/bibliotecaDS]
+2017-11-17 12:19:43,002 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore C:\Java\wildfly-10.1.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-11-17 12:19:43,134 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Java\wildfly-10.1.0.Final\standalone\deployments
+2017-11-17 12:19:43,350 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "api-intime.war" (runtime-name: "api-intime.war")
+2017-11-17 12:19:45,713 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2017-11-17 12:19:46,059 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 65) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:19:46,059 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 65) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:19:46,082 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:19:46,094 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:19:46,099 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:19:46,104 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:19:47,462 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2017-11-17 12:19:48,480 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-11-17 12:19:48,766 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for intimeDS
+2017-11-17 12:19:49,445 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:19:49,514 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 61) HHH000204: Processing PersistenceUnitInfo [
+	name: intimeDS
+	...]
+2017-11-17 12:19:49,767 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment api-intime.war
+2017-11-17 12:19:51,035 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 61) HHH000412: Hibernate Core {5.0.10.Final}
+2017-11-17 12:19:51,035 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 61) HHH000206: hibernate.properties not found
+2017-11-17 12:19:51,051 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 61) HHH000021: Bytecode provider name : javassist
+2017-11-17 12:19:51,575 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 61) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-17 12:19:51,970 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 5.2.4.Final
+2017-11-17 12:19:52,358 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'EstadosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:app/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:module/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:global/api-intime/EstadosDAO
+	java:app/api-intime/EstadosDAO
+	java:module/EstadosDAO
+
+2017-11-17 12:19:52,358 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'ProcessosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:app/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:module/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:global/api-intime/ProcessosDAO
+	java:app/api-intime/ProcessosDAO
+	java:module/ProcessosDAO
+
+2017-11-17 12:19:52,358 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'CidadesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:app/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:module/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:global/api-intime/CidadesDAO
+	java:app/api-intime/CidadesDAO
+	java:module/CidadesDAO
+
+2017-11-17 12:19:52,358 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'PedidosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:app/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:module/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:global/api-intime/PedidosDAO
+	java:app/api-intime/PedidosDAO
+	java:module/PedidosDAO
+
+2017-11-17 12:19:52,358 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'TiposServicosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:module/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:global/api-intime/TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO
+	java:module/TiposServicosDAO
+
+2017-11-17 12:19:52,358 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'PaisesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:app/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:module/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:global/api-intime/PaisesDAO
+	java:app/api-intime/PaisesDAO
+	java:module/PaisesDAO
+
+2017-11-17 12:19:52,358 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'ClientesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:app/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:module/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:global/api-intime/ClientesDAO
+	java:app/api-intime/ClientesDAO
+	java:module/ClientesDAO
+
+2017-11-17 12:19:52,978 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:19:52,980 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:19:53,630 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 2.3.5 (Final)
+2017-11-17 12:19:54,402 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-11-17 12:19:55,105 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:19:55,328 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 61) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017-11-17 12:19:55,390 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 61) Envers integration enabled? : true
+2017-11-17 12:19:57,314 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 61) HHH000228: Running hbm2ddl schema update
+2017-11-17 12:20:00,736 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.emporio.intime.ConfigApplication
+2017-11-17 12:20:00,892 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 64) WFLYUT0021: Registered web context: /api-intime
+2017-11-17 12:20:01,061 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "api-intime.war" (runtime-name : "api-intime.war")
+2017-11-17 12:20:01,424 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-11-17 12:20:01,424 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-11-17 12:20:01,424 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 34982ms - Started 588 of 824 services (406 services are lazy, passive or on-demand)
+2017-11-17 12:21:19,107 INFO  [org.jboss.as.repository] (management-handler-thread - 4) WFLYDR0001: Content added at location C:\Java\wildfly-10.1.0.Final\standalone\data\content\34\a2a683db19a86fe16f10d2b01c61bc3d7b48b6\content
+2017-11-17 12:21:19,124 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0022: Unregistered web context: /api-intime
+2017-11-17 12:21:19,187 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:21:19,209 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:21:19,240 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-11-17 12:21:19,287 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment api-intime.war (runtime-name: api-intime.war) in 173ms
+2017-11-17 12:21:19,287 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "api-intime.war" (runtime-name: "api-intime.war")
+2017-11-17 12:21:19,510 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for intimeDS
+2017-11-17 12:21:19,572 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:21:19,572 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: intimeDS
+	...]
+2017-11-17 12:21:19,626 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment api-intime.war
+2017-11-17 12:21:19,641 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'EstadosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:app/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:module/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:global/api-intime/EstadosDAO
+	java:app/api-intime/EstadosDAO
+	java:module/EstadosDAO
+
+2017-11-17 12:21:19,641 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'ProcessosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:app/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:module/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:global/api-intime/ProcessosDAO
+	java:app/api-intime/ProcessosDAO
+	java:module/ProcessosDAO
+
+2017-11-17 12:21:19,641 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'CidadesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:app/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:module/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:global/api-intime/CidadesDAO
+	java:app/api-intime/CidadesDAO
+	java:module/CidadesDAO
+
+2017-11-17 12:21:19,641 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'PedidosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:app/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:module/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:global/api-intime/PedidosDAO
+	java:app/api-intime/PedidosDAO
+	java:module/PedidosDAO
+
+2017-11-17 12:21:19,641 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TiposServicosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:module/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:global/api-intime/TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO
+	java:module/TiposServicosDAO
+
+2017-11-17 12:21:19,641 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'PaisesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:app/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:module/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:global/api-intime/PaisesDAO
+	java:app/api-intime/PaisesDAO
+	java:module/PaisesDAO
+
+2017-11-17 12:21:19,641 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'ClientesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:app/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:module/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:global/api-intime/ClientesDAO
+	java:app/api-intime/ClientesDAO
+	java:module/ClientesDAO
+
+2017-11-17 12:21:19,810 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 78) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:21:19,810 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 78) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:21:19,841 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-11-17 12:21:19,873 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:21:19,888 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017-11-17 12:21:19,910 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2017-11-17 12:21:20,127 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 78) HHH000228: Running hbm2ddl schema update
+2017-11-17 12:21:20,975 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 82) RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.emporio.intime.ConfigApplication
+2017-11-17 12:21:21,014 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: /api-intime
+2017-11-17 12:21:21,129 INFO  [org.jboss.as.server] (management-handler-thread - 4) WFLYSRV0016: Replaced deployment "api-intime.war" with deployment "api-intime.war"
+2017-11-17 12:21:21,145 INFO  [org.jboss.as.repository] (management-handler-thread - 4) WFLYDR0002: Content removed from location C:\Java\wildfly-10.1.0.Final\standalone\data\content\85\fdbffea315e60929f2d796fe64e930589d6b2c\content
+2017-11-17 12:22:30,739 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2017-11-17 12:22:30,775 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 84) WFLYUT0022: Unregistered web context: /api-intime
+2017-11-17 12:22:30,777 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/bibliotecaDS]
+2017-11-17 12:22:30,839 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2017-11-17 12:22:30,893 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2017-11-17 12:22:30,893 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 85) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:22:30,908 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2017-11-17 12:22:30,908 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 85) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:22:30,924 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 92) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-11-17 12:22:30,924 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/intimeDS]
+2017-11-17 12:22:30,939 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2017-11-17 12:22:30,939 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2017-11-17 12:22:30,977 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2017-11-17 12:22:30,977 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = mysql
+2017-11-17 12:22:30,977 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2017-11-17 12:22:31,009 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 1.4.0.Final stopping
+2017-11-17 12:22:31,078 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment api-intime.war (runtime-name: api-intime.war) in 310ms
+2017-11-17 12:22:31,093 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 305ms
+2017-11-17 12:22:39,013 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2017-11-17 12:22:39,395 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-11-17 12:22:39,514 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-11-17 12:22:39,514 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Java\wildfly-10.1.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jdk1.8.0_131\jre\lib\endorsed
+	java.ext.dirs = C:\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Java\jdk1.8.0_131\jre
+	java.io.tmpdir = C:\Users\EDUARD~1\AppData\Local\Temp\
+	java.library.path = C:\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Borland\Delphi7\Bin;C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\Win64;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Java\jdk1.8.0_131\bin;C:\Java\apache-maven-3.5.0\bin;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\3.4\bin;C:\Users\Eduardo Casagrande\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Eduardo Casagrande\AppData\Roaming\npm;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = C:\Java\wildfly-10.1.0.Final
+	jboss.host.name = eduardo
+	jboss.modules.dir = C:\Java\wildfly-10.1.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = eduardo
+	jboss.qualified.host.name = eduardo
+	jboss.server.base.dir = C:\Java\wildfly-10.1.0.Final\standalone
+	jboss.server.config.dir = C:\Java\wildfly-10.1.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Java\wildfly-10.1.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Java\wildfly-10.1.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Java\wildfly-10.1.0.Final\standalone\log
+	jboss.server.name = eduardo
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Java\wildfly-10.1.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\Java\wildfly-10.1.0.Final\standalone\configuration/logging.properties
+	module.path = C:\Java\wildfly-10.1.0.Final\modules
+	org.jboss.boot.log.file = C:\Java\wildfly-10.1.0.Final\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Java\jdk1.8.0_131\jre\classes
+	sun.boot.library.path = C:\Java\jdk1.8.0_131\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\Java\wildfly-10.1.0.Final\jboss-modules.jar -mp C:\Java\wildfly-10.1.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\Java\wildfly-10.1.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.stderr.encoding = cp850
+	sun.stdout.encoding = cp850
+	user.country = BR
+	user.dir = C:\Java\wildfly-10.1.0.Final\bin
+	user.home = C:\Users\Eduardo Casagrande
+	user.language = pt
+	user.name = Eduardo Casagrande
+	user.script = 
+	user.timezone = America/Sao_Paulo
+	user.variant = 
+2017-11-17 12:22:39,514 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Dorg.jboss.boot.log.file=C:\Java\wildfly-10.1.0.Final\standalone\log\server.log -Dlogging.configuration=file:C:\Java\wildfly-10.1.0.Final\standalone\configuration/logging.properties 
+2017-11-17 12:22:42,265 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-11-17 12:22:42,310 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.4.0.Final
+2017-11-17 12:22:42,326 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.4.0.Final
+2017-11-17 12:22:42,436 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-11-17 12:22:42,439 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2017-11-17 12:22:42,501 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-11-17 12:22:42,532 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2017-11-17 12:22:42,547 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-11-17 12:22:42,554 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2017-11-17 12:22:42,562 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2017-11-17 12:22:42,576 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-11-17 12:22:42,633 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-11-17 12:22:42,699 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-11-17 12:22:42,829 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2017-11-17 12:22:42,840 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-11-17 12:22:42,843 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2017-11-17 12:22:42,878 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = mysql
+2017-11-17 12:22:42,909 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-11-17 12:22:42,921 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-11-17 12:22:43,341 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\Java\wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-11-17 12:22:43,409 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2017-11-17 12:22:43,409 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2017-11-17 12:22:44,134 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2017-11-17 12:22:44,134 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.21.Final
+2017-11-17 12:22:44,243 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2017-11-17 12:22:44,467 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2017-11-17 12:22:44,708 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore C:\Java\wildfly-10.1.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-11-17 12:22:45,090 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Java\wildfly-10.1.0.Final\standalone\deployments
+2017-11-17 12:22:45,054 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2017-11-17 12:22:45,122 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "api-intime.war" (runtime-name: "api-intime.war")
+2017-11-17 12:22:45,170 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-11-17 12:22:45,215 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/intimeDS]
+2017-11-17 12:22:45,216 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/bibliotecaDS]
+2017-11-17 12:22:45,309 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:22:45,316 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 59) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:22:45,330 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:22:45,354 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:22:45,384 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:22:45,404 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 59) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:22:46,167 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2017-11-17 12:22:46,889 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-11-17 12:22:47,068 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for intimeDS
+2017-11-17 12:22:47,269 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 59) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:22:47,322 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 59) HHH000204: Processing PersistenceUnitInfo [
+	name: intimeDS
+	...]
+2017-11-17 12:22:47,438 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment api-intime.war
+2017-11-17 12:22:47,502 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 59) HHH000412: Hibernate Core {5.0.10.Final}
+2017-11-17 12:22:47,510 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 59) HHH000206: hibernate.properties not found
+2017-11-17 12:22:47,520 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 59) HHH000021: Bytecode provider name : javassist
+2017-11-17 12:22:47,634 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 59) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-17 12:22:47,640 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 5.2.4.Final
+2017-11-17 12:22:47,876 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'EstadosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:app/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:module/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:global/api-intime/EstadosDAO
+	java:app/api-intime/EstadosDAO
+	java:module/EstadosDAO
+
+2017-11-17 12:22:47,883 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'ProcessosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:app/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:module/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:global/api-intime/ProcessosDAO
+	java:app/api-intime/ProcessosDAO
+	java:module/ProcessosDAO
+
+2017-11-17 12:22:47,885 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'CidadesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:app/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:module/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:global/api-intime/CidadesDAO
+	java:app/api-intime/CidadesDAO
+	java:module/CidadesDAO
+
+2017-11-17 12:22:47,888 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PedidosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:app/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:module/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:global/api-intime/PedidosDAO
+	java:app/api-intime/PedidosDAO
+	java:module/PedidosDAO
+
+2017-11-17 12:22:47,889 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'TiposServicosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:module/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:global/api-intime/TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO
+	java:module/TiposServicosDAO
+
+2017-11-17 12:22:47,893 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'PaisesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:app/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:module/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:global/api-intime/PaisesDAO
+	java:app/api-intime/PaisesDAO
+	java:module/PaisesDAO
+
+2017-11-17 12:22:47,896 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'ClientesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:app/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:module/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:global/api-intime/ClientesDAO
+	java:app/api-intime/ClientesDAO
+	java:module/ClientesDAO
+
+2017-11-17 12:22:48,402 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 59) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:22:48,403 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 59) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:22:48,575 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 2.3.5 (Final)
+2017-11-17 12:22:48,958 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 59) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:22:49,115 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-11-17 12:22:49,150 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 59) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017-11-17 12:22:49,228 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 59) Envers integration enabled? : true
+2017-11-17 12:22:50,149 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 59) HHH000228: Running hbm2ddl schema update
+2017-11-17 12:22:52,397 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 69) RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.emporio.intime.ConfigApplication
+2017-11-17 12:22:52,560 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0021: Registered web context: /api-intime
+2017-11-17 12:22:52,613 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "api-intime.war" (runtime-name : "api-intime.war")
+2017-11-17 12:22:52,950 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-11-17 12:22:52,956 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-11-17 12:22:52,958 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 14522ms - Started 588 of 824 services (406 services are lazy, passive or on-demand)
+2017-11-17 12:23:22,970 INFO  [org.jboss.as.repository] (management-handler-thread - 4) WFLYDR0001: Content added at location C:\Java\wildfly-10.1.0.Final\standalone\data\content\d6\79cc2464f0fd38cfc5e37dc1882575c78122a2\content
+2017-11-17 12:23:22,992 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 74) WFLYUT0022: Unregistered web context: /api-intime
+2017-11-17 12:23:23,089 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 83) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:23:23,092 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 83) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:23:23,139 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 84) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-11-17 12:23:23,192 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment api-intime.war (runtime-name: api-intime.war) in 206ms
+2017-11-17 12:23:23,192 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "api-intime.war" (runtime-name: "api-intime.war")
+2017-11-17 12:23:23,491 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for intimeDS
+2017-11-17 12:23:23,571 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 84) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:23:23,571 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 84) HHH000204: Processing PersistenceUnitInfo [
+	name: intimeDS
+	...]
+2017-11-17 12:23:23,625 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment api-intime.war
+2017-11-17 12:23:23,656 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'EstadosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:app/api-intime/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:module/EstadosDAO!com.emporio.intime.daos.EstadosDAO
+	java:global/api-intime/EstadosDAO
+	java:app/api-intime/EstadosDAO
+	java:module/EstadosDAO
+
+2017-11-17 12:23:23,656 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'ProcessosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:app/api-intime/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:module/ProcessosDAO!com.emporio.intime.daos.ProcessosDAO
+	java:global/api-intime/ProcessosDAO
+	java:app/api-intime/ProcessosDAO
+	java:module/ProcessosDAO
+
+2017-11-17 12:23:23,656 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'CidadesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:app/api-intime/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:module/CidadesDAO!com.emporio.intime.daos.CidadesDAO
+	java:global/api-intime/CidadesDAO
+	java:app/api-intime/CidadesDAO
+	java:module/CidadesDAO
+
+2017-11-17 12:23:23,656 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'PedidosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:app/api-intime/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:module/PedidosDAO!com.emporio.intime.daos.PedidosDAO
+	java:global/api-intime/PedidosDAO
+	java:app/api-intime/PedidosDAO
+	java:module/PedidosDAO
+
+2017-11-17 12:23:23,656 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'TiposServicosDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:module/TiposServicosDAO!com.emporio.intime.daos.TiposServicosDAO
+	java:global/api-intime/TiposServicosDAO
+	java:app/api-intime/TiposServicosDAO
+	java:module/TiposServicosDAO
+
+2017-11-17 12:23:23,671 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'PaisesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:app/api-intime/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:module/PaisesDAO!com.emporio.intime.daos.PaisesDAO
+	java:global/api-intime/PaisesDAO
+	java:app/api-intime/PaisesDAO
+	java:module/PaisesDAO
+
+2017-11-17 12:23:23,671 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'ClientesDAO' in deployment unit 'deployment "api-intime.war"' are as follows:
+
+	java:global/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:app/api-intime/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:module/ClientesDAO!com.emporio.intime.daos.ClientesDAO
+	java:global/api-intime/ClientesDAO
+	java:app/api-intime/ClientesDAO
+	java:module/ClientesDAO
+
+2017-11-17 12:23:23,874 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 84) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:23:23,890 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 84) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-17 12:23:23,927 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 83) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:23:23,947 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 84) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-11-17 12:23:23,948 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 83) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017-11-17 12:23:23,975 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 83) Envers integration enabled? : true
+2017-11-17 12:23:24,191 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 83) HHH000228: Running hbm2ddl schema update
+2017-11-17 12:23:25,018 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 77) RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.emporio.intime.ConfigApplication
+2017-11-17 12:23:25,072 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0021: Registered web context: /api-intime
+2017-11-17 12:23:25,172 INFO  [org.jboss.as.server] (management-handler-thread - 4) WFLYSRV0016: Replaced deployment "api-intime.war" with deployment "api-intime.war"
+2017-11-17 12:23:25,187 INFO  [org.jboss.as.repository] (management-handler-thread - 4) WFLYDR0002: Content removed from location C:\Java\wildfly-10.1.0.Final\standalone\data\content\34\a2a683db19a86fe16f10d2b01c61bc3d7b48b6\content
+2017-11-17 12:24:29,439 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2017-11-17 12:24:30,799 INFO  [stdout] (default task-3) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-17 12:24:30,799 INFO  [stdout] (default task-2) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-17 12:24:30,799 INFO  [stdout] (default task-1) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_
+2017-11-17 12:24:36,044 INFO  [stdout] (default task-5) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-17 12:24:36,048 INFO  [stdout] (default task-4) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-17 12:24:36,052 INFO  [stdout] (default task-6) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_
+2017-11-17 12:24:43,430 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-7) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasfisicas". Selecting one. Matching methods: [public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer), public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasFisicas()]
+2017-11-17 12:24:43,462 INFO  [stdout] (default task-7) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_
+2017-11-17 12:24:43,526 INFO  [stdout] (default task-7) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:24:43,682 INFO  [stdout] (default task-7) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-17 12:24:43,682 INFO  [stdout] (default task-7) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:24:43,698 INFO  [stdout] (default task-7) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Fisica'
+2017-11-17 12:24:43,720 INFO  [stdout] (default task-7) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:24:43,723 INFO  [stdout] (default task-7) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-17 12:24:43,723 INFO  [stdout] (default task-7) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:24:47,609 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-8) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasjuridicas". Selecting one. Matching methods: [public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasJuridicas(), public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer)]
+2017-11-17 12:24:47,625 INFO  [stdout] (default task-8) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Juridica'
+2017-11-17 12:24:47,631 INFO  [stdout] (default task-8) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:24:47,633 INFO  [stdout] (default task-8) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-17 12:24:48,840 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-9) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasfisicas". Selecting one. Matching methods: [public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer), public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasFisicas()]
+2017-11-17 12:24:48,852 INFO  [stdout] (default task-9) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Fisica'
+2017-11-17 12:24:48,864 INFO  [stdout] (default task-9) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:24:48,869 INFO  [stdout] (default task-9) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-17 12:24:48,869 INFO  [stdout] (default task-9) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:25:18,804 INFO  [stdout] (default task-10) Hibernate: select tiposservi0_.idTipoServico as idTipoSe1_6_, tiposservi0_.descricao as descrica2_6_ from tipos_servicos tiposservi0_
+2017-11-17 12:25:18,812 INFO  [stdout] (default task-12) Hibernate: select processos0_.idProcesso as idProces1_5_, processos0_.descricao as descrica2_5_ from processos processos0_
+2017-11-17 12:25:18,825 INFO  [stdout] (default task-11) Hibernate: select pedidos0_.idPedido as idPedido1_4_, pedidos0_.idCliente as idClient6_4_, pedidos0_.data_entrega as data_ent2_4_, pedidos0_.data_pedido as data_ped3_4_, pedidos0_.idProcesso as idProces7_4_, pedidos0_.quantidade as quantida4_4_, pedidos0_.statusProcesso as statusPr5_4_, pedidos0_.idTipoServico as idTipoSe8_4_ from pedidos pedidos0_
+2017-11-17 12:25:24,384 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-13) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasfisicas". Selecting one. Matching methods: [public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer), public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasFisicas()]
+2017-11-17 12:25:24,397 INFO  [stdout] (default task-13) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Fisica'
+2017-11-17 12:25:24,420 INFO  [stdout] (default task-13) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:25:24,428 INFO  [stdout] (default task-13) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-17 12:25:24,432 INFO  [stdout] (default task-13) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:25:46,610 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-14) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasjuridicas". Selecting one. Matching methods: [public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasJuridicas(), public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer)]
+2017-11-17 12:25:46,618 INFO  [stdout] (default task-14) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Juridica'
+2017-11-17 12:25:46,626 INFO  [stdout] (default task-14) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:25:46,634 INFO  [stdout] (default task-14) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-17 12:25:48,210 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-15) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasfisicas". Selecting one. Matching methods: [public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer), public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasFisicas()]
+2017-11-17 12:25:48,214 INFO  [stdout] (default task-15) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Fisica'
+2017-11-17 12:25:48,218 INFO  [stdout] (default task-15) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:25:48,222 INFO  [stdout] (default task-15) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-17 12:25:48,226 INFO  [stdout] (default task-15) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:26:45,434 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-16) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasjuridicas". Selecting one. Matching methods: [public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasJuridicas(), public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer)]
+2017-11-17 12:26:45,440 INFO  [stdout] (default task-16) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Juridica'
+2017-11-17 12:26:45,444 INFO  [stdout] (default task-16) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:26:45,448 INFO  [stdout] (default task-16) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-17 12:26:46,641 WARN  [org.jboss.resteasy.resteasy_jaxrs.i18n] (default task-17) RESTEASY002142: Multiple resource methods match request "GET /clientes/pessoasfisicas". Selecting one. Matching methods: [public com.emporio.intime.entidades.Clientes com.emporio.intime.resources.ClientesResource.findById(java.lang.Integer), public java.util.List com.emporio.intime.resources.ClientesResource.getPessoasFisicas()]
+2017-11-17 12:26:46,649 INFO  [stdout] (default task-17) Hibernate: select clientes0_.idCliente as idClient1_1_, clientes0_.bairro as bairro2_1_, clientes0_.celularFisico as celularF3_1_, clientes0_.celular_juridico as celular_4_1_, clientes0_.cep as cep5_1_, clientes0_.idCidade as idCidad23_1_, clientes0_.cnpj as cnpj6_1_, clientes0_.complemento as compleme7_1_, clientes0_.cpf as cpf8_1_, clientes0_.data_nascimento as data_nas9_1_, clientes0_.emailFisico as emailFi10_1_, clientes0_.email_juridico as email_j11_1_, clientes0_.idEstado as idEstad24_1_, clientes0_.inscricao_estadual as inscric12_1_, clientes0_.nome as nome13_1_, clientes0_.nome_fantasia as nome_fa14_1_, clientes0_.numero as numero15_1_, clientes0_.pessoa_contato as pessoa_16_1_, clientes0_.razao_social as razao_s17_1_, clientes0_.rg as rg18_1_, clientes0_.rua as rua19_1_, clientes0_.sexo as sexo20_1_, clientes0_.telefone_residencial as telefon21_1_, clientes0_.tipo_pessoa as tipo_pe22_1_ from clientes clientes0_ where clientes0_.tipo_pessoa='Fisica'
+2017-11-17 12:26:46,653 INFO  [stdout] (default task-17) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:26:46,657 INFO  [stdout] (default task-17) Hibernate: select estados0_.idEstado as idEstado1_2_0_, estados0_.idPais as idPais2_2_0_, estados0_.nome as nome3_2_0_, estados0_.uf as uf4_2_0_ from estados estados0_ where estados0_.idEstado=?
+2017-11-17 12:26:46,665 INFO  [stdout] (default task-17) Hibernate: select cidades0_.idCidade as idCidade1_0_0_, cidades0_.idEstado as idEstado2_0_0_, cidades0_.nome as nome3_0_0_ from cidades cidades0_ where cidades0_.idCidade=?
+2017-11-17 12:28:34,154 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2017-11-17 12:28:34,170 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/bibliotecaDS]
+2017-11-17 12:28:34,185 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 87) WFLYUT0022: Unregistered web context: /api-intime
+2017-11-17 12:28:34,262 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+2017-11-17 12:28:34,289 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2017-11-17 12:28:34,289 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 97) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:28:34,308 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2017-11-17 12:28:34,307 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 97) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'api-intime.war#intimeDS'
+2017-11-17 12:28:34,310 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 93) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-11-17 12:28:34,310 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/intimeDS]
+2017-11-17 12:28:34,339 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2017-11-17 12:28:34,339 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2017-11-17 12:28:34,358 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2017-11-17 12:28:34,361 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = mysql
+2017-11-17 12:28:34,361 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2017-11-17 12:28:34,361 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 1.4.0.Final stopping
+2017-11-17 12:28:34,439 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment api-intime.war (runtime-name: api-intime.war) in 261ms
+2017-11-17 12:28:34,439 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 257ms

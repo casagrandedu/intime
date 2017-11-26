@@ -1,0 +1,590 @@
+<html ng-app="appModule" lang="en">
+<head>
+    <title>Gerenciamento de Clientes</title>
+    <meta charset="utf-8"></meta>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/bootstrap.css"></link>
+    <link rel="stylesheet" type="text/css" href="../lib/font-awesome/font-awesome.css"></link>
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <link rel="stylesheet" type="text/css" href="../css/ui.css">
+
+    <script src="../lib/angular/angular.js"></script>
+    <script src="../lib/angular/angular-messages.js"></script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/controllers/clientesCtrl.js"></script>
+    <script src="../js/controllers/juridicaCtrl.js"></script>
+    <script src="../js/filters/nameFilter.js"></script>
+    <script src="../js/filters/cpfFilter.js"></script>
+    <script src="../js/filters/rgFilter.js"></script>
+    <script src="../js/filters/telefoneFilter.js"></script>
+    <script src="../js/filters/celFilter.js"></script>
+    <script src="../js/filters/cnpjFilter.js"></script>
+    <script src="../js/filters/ellipsisFilter.js"></script>
+    <script src="../js/filters/cepFilter.js"></script>
+    <script src="../js/services/tiposServicosAPIService.js"></script>
+    <script src="../js/services/pedidosAPIService.js"></script>
+    <script src="../js/services/clientesAPIService.js"></script>
+    <script src="../js/services/processosAPIService.js"></script>
+    <script src="../js/services/cidadesAPIService.js"></script>
+    <script src="../js/services/estadosAPIService.js"></script>
+    <script src="../js/value/configApisValue.js"></script>
+    <script src="../js/directives/uiAlertDirective.js"></script>
+    <script src="../js/directives/uiNumeros.js"></script>
+</head>
+<body ng-controller="clientesCtrl">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand">Intime</a>
+                <div class="nav-collapse">
+                    <ul class="nav pull-right">
+                        <li class="divider-vertical"></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="clientes.html">Clientes</a></li>
+                    </ul>
+                </div><!-- /.nav-collapse -->
+            </div>
+        </div><!-- /navbar-inner -->
+    </div>
+    
+        <div ng-show="valueTabela">
+            <div class="page-header">
+                <div class="add">
+                    <a href="" ng-click="mostraForm()" title="Adicionar cliente" class="btn btn-success btn-block">+</a>
+                </div>
+                <h4>{{titulo}}</h4>
+            </div>
+        
+            <ui-alert ng-if="mensagemErro && mensagemErro != ''" titulo="Ops, um problema inesperado foi encontrado...">
+                {{mensagemErro}}
+            </ui-alert>
+
+            <div class="formata-texto">
+                <input ng-model="tipoPessoa" ng-change="carregarClientesFisicos()" type="radio" name="tipoPessoa" value="fisica" checked/>Pessoa Física 
+                <input ng-model="tipoPessoa" ng-change="carregarClientesJuridicos()" type="radio" name="tipoPessoa" value="juridica"/>Pessoa Jurídica 
+            </div>
+
+            <div class="size-app-clientes-fisicos">
+                <input type="text" class="input-block-level" 
+                ng-hide="tipoPessoa === 'juridica'" 
+                ng-if="(clientes | filter:criterioDeBusca).length"
+                ng-model="criterioDeBusca" placeholder="Procurar cliente"/>
+
+                <table class="table" ng-hide="tipoPessoa === 'juridica'" ng-if="(clientes | filter:criterioDeBusca).length">
+                    <tr>
+                        <th><a href="" title="Ordenar(A-Z)" ng-click="ordenaPor('nome')">Nome</a></th>
+                        <th>Sexo</th>
+                        <th><a href="" title="Ordenar por atualizações" ng-click="ordenaPor('dataNascimento')">Data Nasc.</a></th>
+                        <th>Nº Celular</th>
+                        <th>Endereço</th>
+                        <th>Ações</th>
+                    </tr>
+                    <tr ng-class="cliente.selecionado ? 'cliente negrito' : ''" ng-repeat="cliente in clientes | filter:criterioDeBusca | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
+                        <td title="{{cliente.nome | name}}">{{cliente.nome | name | ellipsis:5}}</td>
+                        <td>{{cliente.sexo}}</td>
+                        <td>{{cliente.dataNascimento | date:'dd/MM/yyyy'}}</td>
+                        <td>{{cliente.celularFisico | cel}}</td>
+                        <td>
+                            <a href="" ng-click="mostraModal()" data-toggle="modal" data-target="#enderecoModal-{{cliente.idCliente}}">Visualizar</a>
+                        </td>
+                        <td>
+                            <a href="" ng-click="editarCliente(cliente)"><span title="Editar cliente" class="fa fa-pencil"></span></a>
+                            <a href="" ng-click="mostraModall()"><span class="fa fa-search" title="Detalhes" data-toggle="modal" data-target="#exampleModalLong-{{cliente.idCliente}}"></span></a>
+                        </td>
+                        <td>
+                            <!-- Modal -->
+                            <div ng-show="valueModal">
+                                <div class="modal fade" id="enderecoModal-{{cliente.idCliente}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Detalhes do registro</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+    
+                                            <div class="modal-body">
+                                                <h4 class="titulo">Endereço</h4>
+                                                <strong>Estado:</strong> {{cliente.estado.sigla}} - {{cliente.estado.nome}} <br>
+                                                <strong>Cidade:</strong> {{cliente.cidade.nome}} <br>
+                                                <strong>CEP:</strong> {{cliente.cep | cep}} <br>
+                                                <strong>Bairro:</strong> {{cliente.bairro | name}} <br>
+                                                <strong>Rua:</strong> {{cliente.rua | name}}, Nº {{cliente.numero}} <br>
+                                                <strong>Complemento:</strong> {{cliente.complemento}} <br>
+                                            </div>
+                                        
+                                            <div class="modal-footer">
+                                                <button ng-click="fechaModal()" type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fim do Modal -->
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Modal -->
+                            <div ng-show="valueModall">
+                                <div class="modal fade" id="exampleModalLong-{{cliente.idCliente}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Detalhes do registro</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+    
+                                            <div class="modal-body">
+                                                <h4 class="titulo">Dados Pessoais</h4>
+                                                <strong>Nome:</strong> {{cliente.nome | name}} <br>
+                                                <strong>Sexo:</strong> {{cliente.sexo}} <br>
+                                                <strong>Data de nascimento:</strong> {{cliente.dataNascimento | date:'dd/MM/yyyy'}} <br>
+                                                <strong>RG:</strong> {{cliente.rg | rg}} <br>
+                                                <strong>CPF:</strong> {{cliente.cpf | cpf}} <br>
+                                                <h4 class="titulo">Dados para contato</h4>
+                                                <strong>Nº de celular:</strong> {{cliente.celularFisico | cel}} <br>
+                                                <strong>E-mail:</strong> {{cliente.emailFisico}} <br>
+                                                <strong>Telefone residencial:</strong> {{cliente.telefoneFisico | telefone}} <br>
+                                                <h4 class="titulo">Endereço</h4>
+                                                <strong>Estado:</strong> {{cliente.estado.sigla}} - {{cliente.estado.nome}} <br>
+                                                <strong>Cidade:</strong> {{cliente.cidade.nome}} <br>
+                                                <strong>CEP:</strong> {{cliente.cep | cep}} <br>
+                                                <strong>Bairro:</strong> {{cliente.bairro | name}} <br>
+                                                <strong>Rua:</strong> {{cliente.rua | name}}, Nº {{cliente.numero}} <br>
+                                                <strong>Complemento:</strong> {{cliente.complemento}} <br>
+                                            </div>
+                                        
+                                            <div class="modal-footer">
+                                                <button ng-click="fechaModall()" type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Fim do Modal -->
+                        </td>
+                    </tr>
+                </table>
+                <div ng-hide="tipoPessoa === 'juridica'" ng-if="!(clientes | filter:criterioDeBusca).length" class="formata-texto">
+                    Nenhum cliente na lista
+                </div> 
+            </div>
+
+            <div class="size-app-clientes-juridicos">
+                <input type="text" ng-hide="tipoPessoa === 'fisica'" 
+                ng-if="(clientes | filter:criterioDeBusca).length"
+                class="input-block-level" ng-model="criterioDeBusca" placeholder="Procurar cliente"/>
+                <table class="table" ng-hide="tipoPessoa === 'fisica'" ng-if="(clientes | filter:criterioDeBusca).length">
+                    <tr>
+                        <th><a href="" title="Ordenar(A-Z)" ng-click="ordenaPor('nomeFantasia')">Nome Fantasia</a></th>
+                        <th>E-mail</th>
+                        <th><a href="" title="Ordenar(A-Z)" ng-click="ordenaPor('pessoaContato')">Pessoa Contato</a></th>
+                        <th>Celular para Contato</th>
+                        <th>Ações</th>
+                    </tr>
+                    <tr ng-class="cliente.selecionado ? 'cliente negrito' : ''" ng-repeat="cliente in clientes | filter:criterioDeBusca | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
+                        <td title="{{cliente.nomeFantasia | name}}">{{cliente.nomeFantasia | name}}</td>
+                        <td>{{cliente.emailJuridico}}</td>
+                        <td title="{{cliente.pessoaContato | name}}">{{cliente.pessoaContato | name}}</td>
+                        <td>{{cliente.celularJuridico | cel}}</td>
+                        <td>
+                            <a href="" ng-click="editarCliente(cliente)"><span title="Editar cliente" class="fa fa-pencil"></span></a>
+                            <a href="" ng-click="mostraModallJ()"><span class="fa fa-search" title="Detalhes" data-toggle="modal" data-target="#exampleModalLongJ-{{cliente.idCliente}}"></span></a>
+                        </td>
+                        <td>
+                            <!-- Modal -->
+                            <div ng-show="valueModalJ">
+                                <div class="modal fade" id="enderecoModal-{{cliente.idCliente}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Detalhes do registro</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+    
+                                            <div class="modal-body">
+                                                <h4 class="titulo">Endereço</h4>
+                                                <strong>Estado:</strong> {{cliente.estado.sigla}} - {{cliente.estado.nome}} <br>
+                                                <strong>Cidade:</strong> {{cliente.cidade.nome | name}} <br>
+                                                <strong>CEP:</strong> {{cliente.cep | cep}} <br>
+                                                <strong>Bairro:</strong> {{cliente.bairro | name}} <br>
+                                                <strong>Rua:</strong> {{cliente.rua | name}}, Nº {{cliente.numero}} <br>
+                                                <strong>Complemento:</strong> {{cliente.complemento}} <br>
+                                            </div>
+                                        
+                                            <div class="modal-footer">
+                                                <button ng-click="fechaModalJ()" type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fim do Modal -->
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Modal -->
+                            <div ng-show="valueModallJ">
+                                <div class="modal fade" id="exampleModalLongJ-{{cliente.idCliente}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Detalhes do registro</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+    
+                                            <div class="modal-body">
+                                                <h4 class="titulo">Dados Pessoais</h4>
+                                                <strong>Nome Fantasia:</strong> {{cliente.nomeFantasia | name}} <br>
+                                                <strong>Razão social:</strong> {{cliente.razaoSocial | name}} <br>
+                                                <strong>CNPJ:</strong> {{cliente.cnpj | cnpj}} <br>
+                                                <strong>Inscrição estadual:</strong> {{cliente.inscricaoEstadual}} <br>
+                                                <h4 class="titulo">Dados para contato</h4>
+                                                <strong>Pessoa para contato:</strong> {{cliente.pessoaContato | name}} - {{cliente.celularJuridico | cel}} <br>
+                                                <strong>E-mail:</strong> {{cliente.emailJuridico}} <br>
+                                                <h4 class="titulo">Endereço</h4>
+                                                <strong>Estado:</strong> {{cliente.estado.sigla}} - {{cliente.estado.nome}} <br>
+                                                <strong>Cidade:</strong> {{cliente.cidade.nome}} <br>
+                                                <strong>CEP:</strong> {{cliente.cep | cep}} <br>
+                                                <strong>Bairro:</strong> {{cliente.bairro | name}} <br>
+                                                <strong>Rua:</strong> {{cliente.rua | name}}, Nº {{cliente.numero}} <br>
+                                                <strong>Complemento:</strong> {{cliente.complemento}} <br>
+                                            </div>
+                                        
+                                            <div class="modal-footer">
+                                                <button ng-click="fechaModallJ()" type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Fim do Modal -->
+                        </td>
+                    </tr>
+                </table>
+                
+                <div ng-hide="tipoPessoa === 'fisica'" ng-if="!(clientes | filter:criterioDeBusca).length" class="formata-texto">
+                    Nenhum cliente na lista
+                </div>
+            </div>
+            
+            <div ng-include="'../view/footer.html'" class="size-app formata-texto"></div>
+        </div>
+
+    <div ng-show="valueCadastro">
+        <div class="page-header"><h4>Cliente</h4></div>
+        
+        <ui-alert ng-if="mensagemErro && mensagemErro != ''" titulo="Ops, um problema inesperado foi encontrado...">
+            {{mensagemErro}}
+        </ui-alert>
+
+        <div class="size-app" ng-hide="tipoPessoa === 'juridica'">
+            <form name="clienteFisico" class="cadastro">
+        
+                <input ng-model="registroCliente.nome" ng-required="true"
+                name="nome" class="input-block-level" type="text" placeholder="Nome completo">
+                <div ng-messages="clienteFisico.nome.$error"
+                    ng-show="clienteFisico.nome.$dirty">
+                        <div ng-message="required" class="alert alert-danger">
+                            Informe o nome do cliente
+                        </div>
+                </div>
+            
+                <div class="input-left">
+                    <select class="input-block-level" ng-required="true" ng-model="registroCliente.sexo" 
+                    ng-options="opSexo.descricao as opSexo.descricao for opSexo in sexos">
+                        <option value="">Sexo</option>
+                    </select>
+                </div>
+            
+                <div class="input-right">
+                    <input ng-model="registroCliente.dataNascimento" ng-required="true"
+                    name="dataNascimento" class="input-block-level" type="date" title="Data de nascimento - (DD/MM/AAAA)">
+                </div>
+                
+                <div class="input-left">
+                    <input ng-model="registroCliente.cpf" ng-required="true" title="CPF - (XXX.XXX.XXX-XX)"
+                    name="cpf" ui-Num class="input-block-level" type="text" placeholder="CPF (apenas números)" maxlength="11">
+                    <div ng-messages="clienteFisico.cpf.$error"
+                        ng-show="clienteFisico.cpf.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o CPF do cliente
+                            </div>
+                    </div>
+                </div>
+            
+                <div class="input-right">
+                    <input ng-model="registroCliente.rg" ng-required="true" title="RG - (X.XXX.XXX)"
+                    name="rg" ui-Num class="input-block-level" type="text" placeholder="RG (apenas números)" maxlength="7">
+                    <div ng-messages="clienteFisico.rg.$error"
+                        ng-show="clienteFisico.rg.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o RG do cliente
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="input-left">
+                    <input ng-model="registroCliente.celularFisico" ng-required="true" ui-Num title="Telefone celular - ((XX) X XXXX-XXXX)"
+                    name="celularFisico" class="input-block-level" type="text" placeholder="Nº Celular (apenas números)" maxlength="11">
+                    <div ng-messages="clienteFisico.celularFisico.$error"
+                        ng-show="clienteFisico.celularFisico.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o número de celular do cliente
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="input-right">
+                    <input ng-model="registroCliente.telefoneFisico" ng-required="false" ui-Num title="Telefone residencial (opcional) - ((XX) XXXX-XXXX) "
+                    name="telefoneFisico" class="input-block-level" type="text" placeholder="Tel. Residencial (apenas números)" maxlength="10">
+                </div>
+                
+                <input ng-model="registroCliente.emailFisico" ng-required="true" title="E-mail (nome@exemplo.com)"
+                name="emailFisico" class="input-block-level" type="email" placeholder="E-mail">
+                <div ng-messages="clienteFisico.emailFisico.$error"
+                    ng-show="clienteFisico.emailFisico.$dirty">
+                        <div ng-message="required" class="alert alert-danger">
+                            Informe o E-mail do cliente
+                        </div>
+                </div>
+
+                <h4 class="titulo-cadastro">Endereço</h4>
+                <select id="estado" class="input-block-level input-left" 
+                ng-change="carregarCidades(registroCliente.estado)"
+                ng-model="registroCliente.estado" ng-required="true">
+                    <option value="">Estado</option>
+                    <option ng-repeat="estado in estados | orderBy:'sigla'" ng-value="estado"
+                    ng-selected="registroCliente.estado.idEstado == estado.idEstado">
+                        {{estado.sigla + " - " + estado.nome}}
+                    </option>
+                </select>
+        
+                <select id="cidade" class="input-block-level input-right" 
+                ng-model="registroCliente.cidade" ng-required="true">
+                    <option value="">Cidade</option>
+                    <option ng-repeat="cidade in cidades | orderBy:'nome'" ng-value="cidade"
+                    ng-selected="registroCliente.cidade.idCidade == cidade.idCidade">
+                        {{cidade.nome}}
+                    </option>
+                </select>
+        
+                <div class="input-left input-min">
+                    <input ng-model="registroCliente.cep" ng-required="true" ui-Num maxlength="8" title="CEP - (XXXXX-XXX)"
+                    name="cep" class="input-block-level" type="text" placeholder="CEP">
+                    <div ng-messages="clienteFisico.cep.$error"
+                        ng-show="clienteFisico.cep.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o CEP do endereço
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="input-right input-large">
+                    <input ng-model="registroCliente.bairro" ng-required="true"
+                    name="bairro" class="input-block-level" type="text" placeholder="Bairro">
+                    <div ng-messages="clienteFisico.bairro.$error"
+                        ng-show="clienteFisico.bairro.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o bairro do endereço
+                            </div>
+                    </div>
+                </div>
+    
+                <div class="input-left input-large">
+                    <input ng-model="registroCliente.rua" ng-required="true"
+                    name="rua" class="input-block-level" type="text" placeholder="Rua ou avenida">
+                    <div ng-messages="clienteFisico.rua.$error"
+                        ng-show="clienteFisico.rua.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe a rua ou avenida do endereço
+                            </div>
+                    </div>
+                </div>
+        
+                <div class="input-right input-min">
+                    <input ng-model="registroCliente.numero" ng-required="true" ui-Num
+                    name="numero" class="input-block-level" type="text" placeholder="Número"/>
+                    <div ng-messages="clienteFisico.numero.$error"
+                        ng-show="clienteFisico.numero.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o número do endereço
+                            </div>
+                    </div>
+                </div>
+                <textarea ng-model="registroCliente.complemento" ng-required="false" cols="10" rows="3"
+                name="complemento" class="input-block-level" title="Complemento ou referência (opcional)" placeholder="Complemento ou referência"></textarea>
+            </form>
+            <button ng-disabled="clienteFisico.$invalid" ng-click="salvarCliente(registroCliente)" class="btn btn-primary btn-block cadastro">
+                Salvar cliente
+            </button>
+        </div>
+        
+        <div class="size-app" ng-hide="tipoPessoa === 'fisica'">
+            <form name="clienteJuridico" class="cadastro">
+        
+                <div class="input-left">
+                    <input ng-model="registroCliente.nomeFantasia" ng-required="true"
+                    name="nomeFantasia" class="input-block-level" type="text" placeholder="Nome fantasia">
+                    <div ng-messages="clienteJuridico.nomeFantasia.$error"
+                        ng-show="clienteJuridico.nomeFantasia.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o nome fantasia do cliente
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="input-right">
+                    <input ng-model="registroCliente.razaoSocial" ng-required="true"
+                    name="razaoSocial" class="input-block-level" type="text" placeholder="Razão social">
+                    <div ng-messages="clienteJuridico.razaoSocial.$error"
+                        ng-show="clienteJuridico.razaoSocial.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe a razão social do cliente
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="input-left">
+                    <input ng-model="registroCliente.cnpj" ng-required="true" ui-Num title="CNPJ - (XX.XXX.XXX/XXXX-XX)"
+                    name="cnpj" class="input-block-level" type="text" maxlength="14" placeholder="CNPJ (apenas números)">
+                    <div ng-messages="clienteJuridico.cnpj.$error"
+                        ng-show="clienteJuridico.cnpj.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o CNPJ do cliente
+                            </div>
+                    </div>
+                </div>
+        
+                <div class="input-right">    
+                    <input ng-model="registroCliente.inscricaoEstadual" ng-required="true" ui-Num
+                    name="inscricaoEstadual" class="input-block-level" type="text" placeholder="Inscrição estadual (apenas números)">
+                    <div ng-messages="clienteJuridico.inscricaoEstadual.$error"
+                        ng-show="clienteJuridico.inscricaoEstadual.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe a inscrição estadual do cliente
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="input-left">
+                    <input ng-model="registroCliente.pessoaContato" ng-required="true"
+                    name="pessoaContato" class="input-block-level" type="text" placeholder="Pessoa para contato"/>
+                    <div ng-messages="clienteJuridico.pessoaContato.$error"
+                        ng-show="clienteJuridico.pessoaContato.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe uma pessoa para contato
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="input-right">
+                    <input ng-model="registroCliente.celularJuridico" ng-required="true" ui-Num title="Número de celular - ((XX) X XXXX-XXXX)"
+                    name="celularJuridico" class="input-block-level" type="text" placeholder="Nº celular da pessoa (apenas números)" maxlength="11">
+                    <div ng-messages="clienteJuridico.celularJuridico.$error"
+                        ng-show="clienteJuridico.celularJuridico.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o número de celular da pessoa
+                            </div>
+                    </div>
+                </div>
+
+                <input ng-model="registroCliente.emailJuridico" ng-required="true" title="E-mail - (empresa@exemplo.com)"
+                name="emailJuridico" class="input-block-level" type="text" placeholder="E-mail">
+                <div ng-messages="clienteJuridico.emailJuridico.$error"
+                    ng-show="clienteJuridico.emailJuridico.$dirty">
+                        <div ng-message="required" class="alert alert-danger">
+                            Informe o e-mail do cliente
+                        </div>
+                </div>
+                   
+                <h4 class="titulo-cadastro">Endereço</h4>
+                <select id="estado" class="input-block-level input-left" 
+                ng-change="carregarCidades(registroCliente.estado)"
+                ng-model="registroCliente.estado" ng-required="true">
+                    <option value="">Estado</option>
+                    <option ng-repeat="estado in estados | orderBy:'sigla'" ng-value="estado"
+                    ng-selected="registroCliente.estado.idEstado == estado.idEstado">
+                        {{estado.sigla + " - " + estado.nome}}
+                    </option>
+                </select>
+        
+                <select id="cidade" class="input-block-level input-right" 
+                ng-model="registroCliente.cidade" ng-required="true">
+                    <option value="">Cidade</option>
+                    <option ng-repeat="cidade in cidades | orderBy:'nome'" ng-value="cidade"
+                    ng-selected="registroCliente.cidade.idCidade == cidade.idCidade">
+                        {{cidade.nome}}
+                    </option>
+                </select>
+        
+                <div class="input-left input-min">
+                    <input ng-model="registroCliente.cep" ng-required="true" ui-Num maxlength="8" title="CEP - (XXXXX-XXX)"
+                    name="cep" class="input-block-level" type="text" placeholder="CEP">
+                    <div ng-messages="clienteJuridico.cep.$error"
+                        ng-show="clienteJuridico.cep.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o CEP do endereço
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="input-right input-large">
+                    <input ng-model="registroCliente.bairro" ng-required="true"
+                    name="bairro" class="input-block-level" type="text" placeholder="Bairro">
+                    <div ng-messages="clienteJuridico.bairro.$error"
+                        ng-show="clienteJuridico.bairro.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o bairro do endereço
+                            </div>
+                    </div>
+                </div>
+    
+                <div class="input-left input-large">
+                    <input ng-model="registroCliente.rua" ng-required="true"
+                    name="rua" class="input-block-level" type="text" placeholder="Rua ou avenida">
+                    <div ng-messages="clienteJuridico.rua.$error"
+                        ng-show="clienteJuridico.rua.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe a rua ou avenida do endereço
+                            </div>
+                    </div>
+                </div>
+        
+                <div class="input-right input-min">
+                    <input ng-model="registroCliente.numero" ng-required="true" ui-Num
+                    name="numero" class="input-block-level" type="text" placeholder="Número"/>
+                    <div ng-messages="clienteJuridico.numero.$error"
+                        ng-show="clienteJuridico.numero.$dirty">
+                            <div ng-message="required" class="alert alert-danger">
+                                Informe o número do endereço
+                            </div>
+                    </div>
+                </div>
+                <textarea ng-model="registroCliente.complemento" ng-required="false" cols="10" rows="3" title="Complemento ou referência (opcional)"
+                name="complemento" class="input-block-level" title="Complemento (opcional)" placeholder="Complemento ou referência"></textarea>
+            </form>
+
+            <button ng-disabled="clienteJuridico.$invalid" ng-click="salvarCliente(registroCliente)" class="btn btn-primary btn-block cadastro">
+                Salvar cliente
+            </button>
+        </div>
+        <div ng-include="'../view/footer.html'" class="size-app formata-texto"></div>
+    </div>
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Atenção aos passos:
+
+1 - Executar o scrpit DADOS.SQL no MySQL;
+
+2 - Executar o arquivo standalone.bat na pasta: back-end\wildfly-10.1.0.Final\bin\standalone.bat;
+
+3 - Executar o arquivo deploy_api.bat na pasta: back-end\api.intime;
+
+4 - Subir o front-end em um servidor web.

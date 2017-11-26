@@ -1,0 +1,204 @@
+<html ng-app="appModule">
+<head>
+    <title>Intime - Sistema para Gerenciamento de Produção</title>
+    <meta charset="utf-8"></meta>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/bootstrap.css"></link>
+    <link rel="stylesheet" type="text/css" href="../lib/font-awesome/font-awesome.css"></link>
+    <link rel="stylesheet" type="text/css" href="../css/app.css"></link>
+    <link rel="stylesheet" type="text/css" href="../css/ui.css"></link>
+
+    <script src="../lib/angular/angular.js"></script>
+    <script src="../lib/angular/angular-messages.js"></script>
+    <script src="../lib/angular/angular-locale_pt-br.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/controllers/appCtrl.js"></script>
+    <script src="../js/controllers/clientesCtrl.js"></script>
+    <script src="../js/filters/nameFilter.js"></script>
+    <script src="../js/filters/ellipsisFilter.js"></script>
+    <script src="../js/value/configApisValue.js"></script>
+    <script src="../js/services/pedidosAPIService.js"></script>
+    <script src="../js/services/clientesAPIService.js"></script>
+    <script src="../js/services/processosAPIService.js"></script>
+    <script src="../js/services/tiposServicosAPIService.js"></script>    
+    <script src="../js/directives/uiAlertDirective.js"></script>
+
+</head>
+<body ng-controller="appCtrl">
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="">Intime</a>
+                <div class="nav-collapse">
+                    <ul class="nav pull-right">
+                        <li class="divider-vertical"></li>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="clientes.html">Clientes</a></li>
+                    </ul>
+                </div><!-- /.nav-collapse -->
+            </div>
+        </div><!-- /navbar-inner -->
+    </div>
+
+    <div ng-show="valueTabela">
+        <div class="page-header">
+            <div class="add">
+                <a href="" ng-click="mostraForm()" title="Adicionar pedido" class="btn btn-success btn-block">+</a>
+            </div>
+            <h4>{{titulo}}</h4>
+        </div>
+        <div class="size-app">
+            <ui-alert ng-if="mensagemErro && mensagemErro != ''" titulo="Ops, um problema inesperado foi encontrado...">
+                {{mensagemErro}}
+            </ui-alert>
+
+            <input type="text" class="input-block-level" 
+            ng-model="criterioDeBusca" placeholder="Procurar pedido"
+            ng-if="(pedidos | filter:criterioDeBusca).length">
+            <table class="table" ng-if="(pedidos | filter:criterioDeBusca).length">
+                <tr>
+                    <td> </td>
+                    <th><a href="" title="Ordenar por cliente(A-Z)" ng-click="ordenaPor('cliente')">Cliente</a></th>
+                    <th><a href="" title="Ordenar por serviços" ng-click="ordenaPor('dataPedido')">Tipo de Serviço</a></th>
+                    <th><a href="" title="Ordenar por processo atual" ng-click="ordenaPor('statusProcesso')">Processo Atual</a></th>
+                    <th><a href="" title="Ordenar por status" ng-click="ordenaPor('statusProcesso')">Status Processo</a></th>
+                    <th><a href="" title="Ordenar por atualizações" ng-click="ordenaPor('dataPedido')">Última Modificação</a></th>
+                    <th>Ações</th>
+                </tr>
+                <tr ng-class="pedido.selecionado ? 'selecionado negrito' : ''" ng-repeat="pedido in pedidos | filter:criterioDeBusca | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
+                    <td><input type="checkbox" ng-model="pedido.selecionado"></td>
+                    <td title="{{(!!pedido.cliente.nomeFantasia ?  pedido.cliente.nomeFantasia : pedido.cliente.nome) | name}}">{{(!!pedido.cliente.nomeFantasia ?  pedido.cliente.nomeFantasia : pedido.cliente.nome) | name | ellipsis:5}}</td>
+                    <td>{{pedido.tipoServico.descricao}}</td>
+                    <td>{{pedido.processo.descricao}}</td>
+                    <td>{{pedido.statusProcesso}}</td>
+                    <td>{{pedido.dataPedido | date:'dd/MM/yyyy HH:mm'}}</td>
+                    <td>
+                        <a href="" ng-click="editarPedido(pedido)"><span title="Editar pedido" class="fa fa-pencil"></span></a>
+                        <a href="" ng-click="removerPedido(pedido)"><span title="Remover pedido" class="fa fa-trash"></span></a>
+                        <a href="" ng-click="mostraModalDetalhes()"><span title="Detalhes" class="fa fa-search" data-toggle="modal" data-target="#modalDetalhes-{{pedido.idPedido}}"></span></a>
+                    </td>
+                     <td>
+                            <!-- Modal -->
+                        <div ng-show="valueModalDetalhes">
+                            <div class="modal fade" id="modalDetalhes-{{pedido.idPedido}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Detalhes do registro</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <h4 class="titulo">Informações</h4>
+                                            <strong>Cliente:</strong> {{(!!pedido.cliente.nomeFantasia ?  pedido.cliente.nomeFantasia : pedido.cliente.nome) | name}} <br>
+                                            <strong>Tipo de serviço prestado:</strong> {{pedido.tipoServico.descricao}} <br>
+                                            <strong>Data de entrega estimada:</strong> {{pedido.dataEntrega | date:'dd/MM/yyyy'}} <br>
+                                            <strong>Processo atual:</strong> {{pedido.processo.descricao}} <br>
+                                            <strong>Status do processo:</strong> {{pedido.statusProcesso}} <br>
+                                            <h4 class="titulo">Quantidade de camisetas solicitadas</h4>
+                                            <strong>P:</strong> {{pedido.qtdP}} <br>
+                                            <strong>M:</strong> {{pedido.qtdM}} <br>
+                                            <strong>G:</strong> {{pedido.qtdG}} <br>
+                                            <strong>GG:</strong> {{pedido.qtdGG}} <br>
+                                            <strong>XGG:</strong> {{pedido.qtdXGG}} <br>
+                                        </div>
+                                    
+                                        <div class="modal-footer">
+                                            <button ng-click="fechaModalDetalhes()" type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- Fim do Modal -->
+                     </td>
+                </tr>
+            </table>
+            <div ng-if="!(pedidos | filter:criterioDeBusca).length" class="formata-texto">
+                Nenhum pedido na lista
+            </div>
+        </div>
+        
+        <button ng-click="removerPedidos(pedidos)" class="btn btn-danger btn-block cadastro" ng-if="temPedidoSelecionado(pedidos)">
+            Remover pedidos
+        </button>
+    </div>
+    
+    <div ng-show="valueCadastro">
+        <div class="page-header"><h4>Pedido</h4></div>
+        
+            <ui-alert ng-if="mensagemErro && mensagemErro != ''" titulo="Ops, um problema inesperado foi encontrado...">
+                {{mensagemErro}}
+            </ui-alert>
+        <div class="size-app">
+            <form name="pedidoForm" class="cadastro">
+                <select id="cliente" class="input-block-level borda" title="Cliente do pedido" ng-model="registroPedido.cliente" ng-required="true">
+                    <option value="">Cliente</option>
+                    <option ng-repeat="cliente in clientes | orderBy:'nome'" ng-value="cliente"
+                    ng-selected="registroPedido.cliente.idCliente == cliente.idCliente">
+                        {{!!cliente.nomeFantasia ?  cliente.nomeFantasia : cliente.nome}}
+                    </option>
+                </select>
+    
+                <select id="tipoServico" title="Tipo de serviço solicitado" class="input-block-level input-left" ng-model="registroPedido.tipoServico" ng-required="true">
+                    <option value="">Tipo Serviço</option>
+                    <option ng-repeat="tipoServico in tiposServicos | orderBy:'descricao'" ng-value="tipoServico"
+                    ng-selected="registroPedido.tipoServico.idTipoServico == tipoServico.idTipoServico">
+                        {{tipoServico.descricao}}
+                    </option>
+                </select>
+    
+                <input ng-model="registroPedido.dataEntrega" ng-required="true"
+                name="dataEntrega" class="input-block-level input-right" type="date" title="Data de entrega do pedido">
+    
+                <select id="processo" class="input-block-level input-left borda" ng-model="registroPedido.processo" ng-required="true" title="Processo atual do pedido">
+                    <option value="">Processo</option>
+                    <option ng-repeat="processo in processos | orderBy:'descricao'" ng-value="processo"
+                    ng-selected="registroPedido.processo.idProcesso == processo.idProcesso">
+                        {{processo.descricao}}
+                    </option>
+                </select>
+    
+                <select class="input-block-level input-right" title="Status do processo atual" ng-required="true" 
+                ng-model="registroPedido.statusProcesso" 
+                ng-options="statusProcessoOp.descricao  as statusProcessoOp.descricao for statusProcessoOp in statusProcessos">
+                    <option value="">Status Processo</option>
+                </select>
+
+                <h4 class="titulo-cadastro">Quantidade</h4>
+                <input ng-model="registroPedido.qtdP" ng-required="true"
+                name="qtdP" class="input-block-level input-min-qtd" type="number" title="Quantidade de camisetas Nº P" placeholder="P">
+
+                <input ng-model="registroPedido.qtdM" ng-required="true"
+                name="qtdM" class="input-block-level input-min-qtd" type="number" title="Quantidade de camisetas Nº M" placeholder="M">
+
+                <input ng-model="registroPedido.qtdG" ng-required="true"
+                name="qtdG" class="input-block-level input-min-qtd" type="number" title="Quantidade de camisetas Nº G" placeholder="G">
+
+                <input ng-model="registroPedido.qtdGG" ng-required="true"
+                name="qtdGG" class="input-block-level input-min-qtd" type="number" title="Quantidade de camisetas Nº GG" placeholder="GG">
+                
+                <input ng-model="registroPedido.qtdXGG" ng-required="true"
+                name="qtdXGG" class="input-block-level input-min-qtd" type="number" title="Quantidade de camisetas Nº XGG" placeholder="XGG">
+            </form>
+    
+            <button ng-disabled="pedidoForm.$invalid" ng-click="salvarPedido(registroPedido)" class="btn btn-primary btn-block cadastro">
+                Salvar pedido
+            </button>
+        </div>
+    </div>
+    <div ng-include="'../view/footer.html'" class="size-app formata-texto"></div>
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/bootstrap.js"></script>
+</body>
+</html>
