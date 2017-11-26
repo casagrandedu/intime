@@ -8,6 +8,7 @@ const sequelize = require('./config/sequelize');
 const passport = require('./config/passport');
 
 const app = express();
+const port = process.env.PORT;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -25,6 +26,4 @@ app.use(passport.session());
 
 require('./routes')(app, passport);
 
-app.listen(process.env.PORT, () => {
-  console.log(`App rodando na porta ${process.env.PORT}`);
-});
+app.listen(port, () => console.log(`App rodando na porta ${port}`));

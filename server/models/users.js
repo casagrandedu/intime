@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
-const sequelize = require('./../config/sequelize');
 const bcrypt = require('bcrypt-nodejs');
+const sequelize = require('./../config/sequelize');
 
 const userModel = sequelize.define('usuarios', {
   idUsuario: {
@@ -16,12 +16,8 @@ const userModel = sequelize.define('usuarios', {
   }
 });
 
-userModel.generateHash = (password) => {
-  return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
-};
+userModel.generateHash = (password) => bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 
-userModel.validPassword = (pw1, pw2) => {
-  return bcrypt.compareSync(pw1, pw2);
-};
+userModel.validPassword = (pw1, pw2) => bcrypt.compareSync(pw1, pw2);
 
 module.exports = userModel;

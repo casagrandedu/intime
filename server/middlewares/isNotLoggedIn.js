@@ -1,9 +1,1 @@
-module.exports = (app) => {
-  return (req, res, next) => {
-    if (!req.isAuthenticated()) {
-      return next();
-    }
-
-    res.redirect('/index/1');
-  };
-};
+module.exports = (req, res, next) => !req.isAuthenticated() ? next() : res.redirect('/index');
