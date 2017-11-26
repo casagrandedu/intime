@@ -1,6 +1,6 @@
 Atenção aos passos:
 
-1 - Abrir o banco de dados MySQL com o servidor
+1 - Abrir o banco de dados MySQL com o servidor;
 
 2 - Criar database com o nome intime;
 
