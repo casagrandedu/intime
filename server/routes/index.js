@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const path = require('path');
 const fs = require('fs');
+
 const Users = require('./../models/users');
 const {isLoggedIn, isNotLoggedIn} = require('./../middlewares');
 
