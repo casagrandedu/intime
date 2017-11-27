@@ -36,8 +36,8 @@ module.exports = (app, passport) => {
 
   app.get('/', (req, res) => res.redirect('/index'));
 
-  app.get('/index', isLoggedIn, (req, res, next) => {
-    const file = path.join(__dirname, '../files/users/', req.user.nome, '/index.html');
+  app.get(['/index', '/clientes'], isLoggedIn, (req, res, next) => {
+    const file = path.join(__dirname, `../files/users/${req.user.nome}/${req.url.replace(/\//g, '')}.html`);
 
     fs.access(file, err => err ? next() : res.sendFile(file));
   })
