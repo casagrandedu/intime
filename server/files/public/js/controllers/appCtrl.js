@@ -12,9 +12,10 @@ function($scope, $filter, $http, $injector) {
     $scope.valueCadastro = false;
     $scope.valueModalQtd = false;
     $scope.valueModalDetalhes = false;
+    $scope.loginErro = false;
 
     $scope.statusProcessos = [
-        {"descricao" : "Finalizado"},  
+        {"descricao" : "Finalizado"},
         {"descricao" : "Em andamento"}
     ];
 
@@ -31,7 +32,7 @@ function($scope, $filter, $http, $injector) {
     $scope.mostraModalQtd = function(){
         $scope.valueModalQtd = true;
     }
-    
+
     $scope.fechaModalQtd = function(){
         $scope.valueModalQtd = false;
     }
@@ -42,6 +43,12 @@ function($scope, $filter, $http, $injector) {
 
     $scope.fechaModalDetalhes = function() {
         $scope.valueModalDetalhes = false;
+    }
+
+    function _checarLoginErro() {
+      if (window.location.href.match(/.*\/login\?err=1$/g)) {
+        $scope.loginErro = true;
+      }
     }
 
     function _carregarPedidos() {
@@ -90,7 +97,7 @@ function($scope, $filter, $http, $injector) {
 
     $scope.salvarPedido = function(pedido) {
         pedido.statusProcesso = $scope.registroPedido.statusProcesso;
-        
+
         var novoPedido = pedido;
         pedido.dataPedido = new Date();
         if (!pedido.idPedido) {
@@ -128,7 +135,7 @@ function($scope, $filter, $http, $injector) {
 
     $scope.removerPedidos = function(pedidos) {
         if (!confirm("Você realmente deseja remover esses pedidos?")) {
-            return;          
+            return;
         }
 
         pedidos.forEach(function(pedido) {
@@ -140,9 +147,9 @@ function($scope, $filter, $http, $injector) {
 
     $scope.removerPedido = function(pedido) {
         if (!confirm("Você realmente deseja remover este pedido?")) {
-            return;          
+            return;
         }
-        
+
         _removePedido(pedido);
     };
 
@@ -167,6 +174,7 @@ function($scope, $filter, $http, $injector) {
         $scope.direcaoDaOrdenacao = !$scope.direcaoDaOrdenacao;
     };
 
+    _checarLoginErro();
     _carregarTiposServicos();
     _carregarPedidos();
     _carregarProcessos();

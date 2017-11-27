@@ -32,10 +32,13 @@
                     <legend>Login</legend>
 
                     <form action="/login" method="post">
-                        <input type="text" id="username" class="input-block-level" name="nome" placeholder="Usuário">
-                        <input type="password" id="password" class="input-block-level" name="senha" placeholder="Senha">
+                        <input type="text" id="username" class="input-block-level" name="nome" placeholder="Usuário" autofocus required>
+                        <input type="password" id="password" class="input-block-level" name="senha" placeholder="Senha" required>
                         <button type="submit" name="submit" class="btn btn-success btn-block">Entrar</button>
                     </form>
+                    <div ng-if="loginErro" class="alert alert-danger">
+                      <strong>Credenciais erradas.</strong>
+                    </div>
                 </div>
             </div>
         </div>
